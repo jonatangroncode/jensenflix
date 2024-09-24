@@ -1,0 +1,46 @@
+
+
+.footercontainer {
+    display: grid;
+    font-weight: bold;
+    color: #EBD3F8;
+  
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, minmax(150 px, auto));
+    width: 90%;
+    height: auto;
+    gap: 20px;
+    margin: 0 auto; /* Centrerar horisontellt */
+    background-color: #2E073F;
+   
+
+}
+ 
+
+li {
+    list-style-type: none;
+}
+
+.JensenFlix {
+
+}
+
+
+.information {
+
+}
+
+.Omoss {
+    
+}
+
+
+.följoss {
+
+}
+
+.legal {
+    margin: 0 auto; /* Centrerar horisontellt */
+
+}
+
