@@ -1,0 +1,23 @@
+.navcontainer {
+    background-color: #2E073F;
+    max-height: 500px;
+    max-width: auto;
+    border: 10px solid black;
+}
+
+.navbar {
+    background-color: #7A1CAC;
+    display: grid;
+    grid-template-columns: 7fr 7fr;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+}
