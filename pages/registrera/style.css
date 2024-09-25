@@ -1,25 +1,17 @@
 body {
-    background-color: rgb(235, 209, 157);
-}
-
-.navcontainer {
-    background-color: #7d2876;
-    max-height: auto;
-    max-width: auto;
-    border: 5px solid black;
-    border-radius: 5px;
-    padding: 10px;
-    margin-top: 20px;
+    background-color: rgb(0, 0, 0);
 }
 
 .navbar {
-    background-color: #ffffff;
+    background-color: #4d2667;
     display: grid;
     grid-template-columns: 3fr 1fr 1fr 1fr 2fr auto auto;
     padding: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
     border-radius: 10px;
+    max-height: 55px;
 }
 
 .navbar ul {
@@ -30,31 +22,40 @@ body {
 }
 
 .navbar ul li a {
-    color: rgb(21, 186, 106);
-    font-size: 20px;
-    margin-left: 5px;
-    margin-right: 5px;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
     text-align: center;
-    padding: 20px;
+    line-height: 33px;
     text-decoration: none;
+    box-sizing: border-box;
+}
+
+.navbar ul li:last-child a {
+    margin-left: 20px;
 }
 
 .navbar a:hover {
-    background-color: rgb(48, 165, 71);
+    background-color: rgb(165, 48, 161);
     color: black;
-    margin: auto;
 }
 
 .reglogincontainer {
     margin: auto;
-    margin-top: 20px;
+    margin-top: 40px;
     padding: 20px;
     max-width: 500px;
-    min-height: auto;
-    background-color: white;
+    max-height: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.reglogincontainer h1 {
+    text-align: center;
+    color: purple;
 }
 
 .logo-container img {
-    width: 10px;
+    margin-top: 10px;
+    width: 140px;
     height: auto;
 }
