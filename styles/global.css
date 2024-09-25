@@ -1,6 +1,20 @@
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Bold.ttf");
+    font-weight: bold;
+}
+
 body, html {
     margin: 0;
     background-color: var(--main-background-color);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
 }
 
 * {
@@ -8,8 +22,70 @@ body, html {
 }
 
 .header {
-    background-image: url("../images/headerbg.jpg");
+    background-image: url("../images/headerbg.png");
+    background-position: center;
     background-size: 100%;
     width: 100%;
     height: 500px;
+    color: #FFF;
+}
+
+.header .container {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.header .container .caption {
+    margin: 0;
+}
+
+.header .container .btns {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.header .container .btns .subscribe {
+    width: 75%;
+}
+
+.header .container .btns button {
+    background-color: var(--secondary-theme-color);
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: bold;
+    color: #EBD3F8;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.header .container .btns .subscribe button {
+    width: 100%;
+    background-color: var(--theme-color);
+}
+
+.header .container .btns button:hover {
+    filter: saturate(1.5);
+    color: #FFF;
+}
+
+.header .container .btns .read-more {
+    width: 25%;
+}
+
+.header .container .btns .read-more button {
+    width: 100%;
+}
+
+.header .container .footnote {
+    font-size: 0.8em;
+    margin-top: 10px;
 }
