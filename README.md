@@ -9,7 +9,7 @@ t.ex. feat: (new feature for the user, not a new feature for build script)
 
 vem som gör vad i baslayouten:
 - hampus: navigationen
-- axel: header
+- axel: header & logga
 - jonathan & roza: footer
 
 vem som gör vilken sida: 
