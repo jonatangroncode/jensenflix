@@ -53,3 +53,8 @@ body {
     min-height: auto;
     background-color: white;
 }
+
+.logo-container img {
+    width: 10px;
+    height: auto;
+}
