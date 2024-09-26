@@ -1,0 +1,49 @@
+@import "variables.css";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+
+.hero {
+    position: relative;
+    background-image: url('images/omoss.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: rgb(55, 4, 4); 
+}
+
+.hero h2 {
+    position: absolute;
+    font-size: 3rem;
+    background: rgb(239, 232, 232); 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+}
+
+.about-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+ .about-us-content about-us-title {
+    display: grid;
+    grid-column: 1 / 2;
+    gap: 20px;
+    align-content: center;
+}
+ 
