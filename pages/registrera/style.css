@@ -59,6 +59,13 @@ body {
     color: black;
 }
 
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .reglogincontainer {
     margin: auto;
     margin-top: 40px;
