@@ -90,12 +90,12 @@ body, html {
 }
 
 .header .container .btns .read-more button {
-    color: silver;
+    color: var(--text-color);
     width: 100%;
 }
 
 .header .container .btns .read-more button:hover {
-    background-color: #202020;
+    filter: saturate(1.25);
     color: #FFF;
 }
 
