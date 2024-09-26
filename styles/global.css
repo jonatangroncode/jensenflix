@@ -27,6 +27,10 @@ body, html {
     margin: 50px auto;
 }
 
+.main-container h1 {
+    color: #FFF;
+}
+
 .header {
     background-image: 
         linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, var(--main-background-color) 100%), 
@@ -211,4 +215,21 @@ footer ul {
 .navbar a:hover {
     background-color: rgb(165, 48, 161);
     color: black;
+}
+
+.icon {
+    height: 55px;
+    width: 55px;
+    display: inline-block;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.icon-close {
+    background-image: url("../images/close.svg");
+}
+
+.icon-check {
+    background-image: url("../images/check.svg");
 }
