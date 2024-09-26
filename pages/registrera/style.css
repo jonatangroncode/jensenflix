@@ -70,15 +70,73 @@ body {
     margin: auto;
     margin-top: 40px;
     padding: 20px;
-    max-width: 500px;
+    max-width: 520px;
     max-height: auto;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(48, 47, 47);
     border-radius: 10px;
+    color: rgb(255, 255, 255);
 }
 
 .reglogincontainer h1 {
     text-align: center;
     color: purple;
+}
+
+input[type="text"], input[type="password"] {
+    width: 90%;
+    border: 2px solid purple;
+    border-radius: 5px;
+    height: 20px;
+    padding: 3px;
+}
+
+input[type="submit"] {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.regbutton {
+    display: inline-block;
+    background-color: rgb(142, 84, 161);
+    color: white;
+    padding: 5px;
+    border: 2px solid purple;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.regbutton:hover {
+    background-color: blueviolet;
+    color: white;
+}
+
+.loginbutton {
+    display: inline-block;
+    background-color: rgb(142, 84, 161);
+    color: white;
+    padding: 5px;
+    border: 2px solid purple;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.loginbutton:hover {
+    background-color: blueviolet;
+    color: white;
+}
+
+label a {
+    color: rgb(149, 85, 146);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+label a:hover {
+    color: rgb(232, 222, 157);
+    text-decoration: underline;
 }
 
 .logo-container img {
