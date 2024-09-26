@@ -216,6 +216,12 @@ footer ul {
     max-width: 25px;
 }
 
+.navbar ul li .icon-search:hover {
+    max-width: 25px;
+    background-image: url("../images/searchiconpurple.svg");
+    
+}
+
 
 .navbar ul li {
     height: 100%;
