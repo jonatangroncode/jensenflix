@@ -15,14 +15,22 @@ body, html {
     background-color: var(--main-background-color);
     font-family: var(--font-family);
     font-size: var(--font-size);
+    color: var(--text-color);
 }
 
 * {
     box-sizing: border-box;
 }
 
+.main-container {
+    width: 75%;
+    margin: 50px auto;
+}
+
 .header {
-    background-image: url("../images/headerbg.png");
+    background-image: 
+        linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, var(--main-background-color) 100%), 
+        url("../images/headerbg.png"); 
     background-position: center;
     background-size: 100%;
     width: 100%;
@@ -58,11 +66,11 @@ body, html {
     background-color: var(--secondary-theme-color);
     padding: 15px;
     border: none;
-    border-radius: 6px;
+    border-radius: 60px;
     font-family: var(--font-family);
     font-size: var(--font-size);
     font-weight: bold;
-    color: #EBD3F8;
+    color: #fff;
     cursor: pointer;
     transition: all 0.2s ease;
 }
@@ -72,9 +80,8 @@ body, html {
     background-color: var(--theme-color);
 }
 
-.header .container .btns button:hover {
-    filter: saturate(1.5);
-    color: #FFF;
+.header .container .btns .subscribe button:hover {
+    filter: saturate(1.25);
 }
 
 .header .container .btns .read-more {
@@ -82,7 +89,13 @@ body, html {
 }
 
 .header .container .btns .read-more button {
+    color: silver;
     width: 100%;
+}
+
+.header .container .btns .read-more button:hover {
+    background-color: #202020;
+    color: #FFF;
 }
 
 .header .container .footnote {
