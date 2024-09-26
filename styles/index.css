@@ -1,46 +1,40 @@
-
-
-.container {
-    display: grid;
-    font-weight: bold;
-    color: #EBD3F8;
-  
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(1, minmax(150 px, auto));
-    width: 90%;
-    height: auto;
-    gap: 20px;
-    margin: 0 auto; /* Centrerar horisontellt */
-    background-color: #2E073F;
-   
+.trending-shows {
 
 }
- 
 
-li {
+.trending-shows ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
 }
 
-.JensenFlix {
-
+.trending-shows ul li {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
 }
 
-
-.information {
-
+.trending-shows ul li .ranking {
+    padding: 20px;
+    z-index: 1;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    font-size: 2em;
+    text-shadow: 0 0 10px black;
 }
 
-.Omoss {
-    
+.trending-shows ul li .thumbnail {
+    width: 180px;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 6px;
+    background-position: center;
 }
 
-
-.följoss {
-
+.trending-shows ul li .thumbnail img {
+    width: 100%;
+    height: 100%;
 }
-
-.legal {
-    margin: 0 auto; /* Centrerar horisontellt */
-
-}
-

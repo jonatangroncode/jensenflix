@@ -1,4 +1,8 @@
 :root {
-    --main-background-color: #2E073F;
-    --theme-color: #7A1CAC;
+    --main-background-color: #151515;
+    --theme-color: #512B81;
+    --secondary-theme-color: #101010;
+    --text-color: #F7EBFF;
+    --font-family: "Roboto", sans-serif;
+    --font-size: 16px;
 }
