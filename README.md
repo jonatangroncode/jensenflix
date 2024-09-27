@@ -155,6 +155,10 @@ Filteringen och sortering är designat på ett sätt som gör det enkelt för an
 ## Om Oss Sidan
 Den stora bilden med personer som tittar på film skapar omedelbart en känslomässig koppling till användaren och representerar kärnupplevelsen av JensenFilm – att samla människor för att njuta av film och underhållning. Under huvudbilden finns en kort introducerande text som välkomnar användaren och förklarar plattformens syfte. Det är vilket ger en snabb förståelse av vad Jensenflix erbjuder. Till höger visas en bild av tjänsten på mobiltelefoner, vilket tydligt kommunicerar tillgängligheten på olika enheter.  finns statistik (38 miljoner användare, 200+ kanaler) som bygger trovärdighet och ger konkreta skäl att använda tjänsten. Längst ner på sidan placeras logotyper av välkända samarbetspartners för att bygga förtroende och ge en stark påminnelse om att Jensenflix arbetar med betrodda varumärken, vilket ökar trovärdigheten och tryggheten för potentiella kunder. Jag använder css-grid på den här sida förutom hero section.
 
+![Om Oss Desktop Skiss](images/omskiss/omdesktop.png)
+![Om Oss Tablet Skiss](images/omskiss/ommobil.png)
+![Om Oss Mobile Skiss](images/omskiss/omtablet.png)
+
 ## Kontakt Oss Sidan
 Plats för kontaktpersoner (cirklar): Jag har skapat en sektion med cirkulära bilder för kontaktpersoner, där varje cirkel representerar en person. Genom att använda cirklar skapar vi en visuell sammanhållning och enkelhet. Cirklarna är jämnt fördelade för att ge en ren och organiserad känsla, vilket gör det lätt för användaren att förstå vem de kan kontakta för specifika behov.
 
@@ -162,6 +166,6 @@ Bild på kontorsbyggnaden: Längre ner på sidan har jag inkluderat en bild av f
 
 Kontaktinformation längst ner: Längst ner finns företagets kontaktuppgifter, som inkluderar adress, telefonnummer och e-post. Denna placering gör det lättillgängligt för användaren att hitta all kontaktinformation på ett och samma ställe, utan att behöva leta genom sidan. Jag skapar med flex böx till profilekard. 
 
-![Om Oss Desktop Skiss](images/omskiss/omdesktop.png)
-![Om Oss Tablet Skiss](images/omskiss/ommobil.png)
-![Om Oss Mobile Skiss](images/omskiss/omtablet.png)
+![Kontakta Oss Desktop Skiss](images/kontaktskiss/kontaktdesktop.png)
+![Kontakta Oss Tablet Skiss](images/kontaktskiss/kontakttablet.png)
+![Kontakta Oss Mobile Skiss](images/kontaktskiss/kontaktmobil.png)
