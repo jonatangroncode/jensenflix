@@ -23,6 +23,30 @@ body, html {
     box-sizing: border-box;
 }
 
+button {
+    background-color: var(--theme-color);
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: normal;
+    color: #fff;
+    background-color: var(--secondary-container-bg-color);
+}
+
 .main-container {
     width: 75%;
     margin: 50px auto;
@@ -63,26 +87,12 @@ body, html {
     width: 75%;
 }
 
-.header .container .btns button {
-    background-color: var(--secondary-theme-color);
-    padding: 15px;
-    border: none;
-    border-radius: 30px;
-    font-family: var(--font-family);
-    font-size: var(--font-size);
-    font-weight: bold;
-    color: #fff;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
 .header .container .btns .subscribe button {
     width: 100%;
-    background-color: var(--theme-color);
 }
 
 .header .container .btns .subscribe button:hover {
-    filter: saturate(1.25);
+    background-color: var(--theme-color-hover);
 }
 
 .header .container .btns .read-more {
@@ -90,13 +100,12 @@ body, html {
 }
 
 .header .container .btns .read-more button {
-    color: var(--text-color);
     width: 100%;
+    background-color: var(--secondary-theme-color);
 }
 
 .header .container .btns .read-more button:hover {
-    filter: saturate(1.25);
-    color: #FFF;
+    background-color: var(--secondary-theme-color-hover);
 }
 
 .header .container .footnote {
