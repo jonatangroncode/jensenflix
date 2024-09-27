@@ -16,10 +16,35 @@ body, html {
     font-family: var(--font-family);
     font-size: var(--font-size);
     color: var(--text-color);
+    line-height: 1.5;
 }
 
 * {
     box-sizing: border-box;
+}
+
+button {
+    background-color: var(--theme-color);
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: normal;
+    color: #fff;
+    background-color: var(--secondary-container-bg-color);
 }
 
 .main-container {
@@ -34,7 +59,7 @@ body, html {
     background-position: center;
     background-size: 100%;
     width: 100%;
-    height: 500px;
+    height: 600px;
     color: #FFF;
 }
 
@@ -62,26 +87,12 @@ body, html {
     width: 75%;
 }
 
-.header .container .btns button {
-    background-color: var(--secondary-theme-color);
-    padding: 15px;
-    border: none;
-    border-radius: 60px;
-    font-family: var(--font-family);
-    font-size: var(--font-size);
-    font-weight: bold;
-    color: #fff;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
 .header .container .btns .subscribe button {
     width: 100%;
-    background-color: var(--theme-color);
 }
 
 .header .container .btns .subscribe button:hover {
-    filter: saturate(1.25);
+    background-color: var(--theme-color-hover);
 }
 
 .header .container .btns .read-more {
@@ -89,13 +100,12 @@ body, html {
 }
 
 .header .container .btns .read-more button {
-    color: silver;
     width: 100%;
+    background-color: var(--secondary-theme-color);
 }
 
 .header .container .btns .read-more button:hover {
-    background-color: #202020;
-    color: #FFF;
+    background-color: var(--secondary-theme-color-hover);
 }
 
 .header .container .footnote {
@@ -165,50 +175,79 @@ footer ul {
 }
 
 .navbar {
-    background-color: #4d2667;
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr 2fr auto auto;
+    grid-template-columns: 3fr 1fr 1fr 1fr 2fr auto auto auto;
     padding: 10px;
     margin-top: 10px;
     margin-left: 5px;
     margin-right: 5px;
     border-radius: 10px;
-    max-height: 70px;
-    border: 5px solid rgb(0, 0, 0);
+    max-height: 100px;
 
+}
+
+.navbar ul li.logo img {
+    width: 300px;
+    height: auto;
+}
+
+.logo {
+    align-self: center;
 }
 
 .navbar ul {
     list-style: none;
     display: flex;
-    gap: 20px;
-    display: contents;
 }
-
+.navbar ul li.search a {
+    padding: 0 10px;
+ }
 .navbar ul li a {
     color: rgb(255, 255, 255);
-    margin-top: 10px;
-    text-align: center;
-    line-height: 5px;
     text-decoration: none;
-    box-sizing: border-box;
     font-weight: bold;
-    float: left;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 20px;
+    padding: 0 20px;
     display: block;
 }
 
+.navbar ul li .icon-search {
+    max-width: 25px;
+}
+
+
 .navbar ul li {
     height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
 .navbar ul li:last-child a {
     margin-left: 20px;
 }
 
-.navbar a:hover {
+.navbar ul li:not(.logo) a:hover {
     background-color: rgb(165, 48, 161);
     color: black;
+}
+
+.icon {
+    height: 55px;
+    width: 55px;
+    display: inline-block;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.icon-close {
+    background-image: url("../images/close.svg");
+}
+
+.icon-check {
+    background-image: url("../images/check.svg");
+}
+
+.icon-search {
+    background-image: url("../images/searchicon.svg");
 }
