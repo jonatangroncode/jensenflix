@@ -164,9 +164,9 @@ Olika spalter för Filmer/Serier/Sport är placerade i mitten av navbaren. Navba
 
 Har vidare byggt på layout och styling för sidorna för inlogg och registrering.
 
-![Reg/Login Skiss](images/regloginskiss/MallDesktop.png)
-![Reg/Login Tablet Skiss](images/regloginskiss/MallTablet.png)
-![Reg/Login Mobile Skiss](images/regloginskiss/MallMobile.png)
+![Reg/Login Skiss](images/mockskissar/regloginskiss/MallDesktop.png)
+![Reg/Login Tablet Skiss](images/mockskissar/regloginskiss/MallTablet.png)
+![Reg/Login Mobile Skiss](images/mockskissar/regloginskiss/MallMobile.png)
 
 # Rozas Sidor
 
