@@ -18,7 +18,7 @@ vem som gör vad i baslayouten:
 vem som gör vilken sida: 
 - registrering, inloggning och betalmetod: hampus
 - förstasidan & sök : axel
-- lista med filmer: jonathan
+- lista med filmer: jonatan
 - om oss & kontakta oss: roza
 
 sidor som ska göras: förstasidan, sida med lista över filmer
