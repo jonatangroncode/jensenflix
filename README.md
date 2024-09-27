@@ -160,4 +160,4 @@ Plats för kontaktpersoner (cirklar): Jag har skapat en sektion med cirkulära b
 
 Bild på kontorsbyggnaden: Längre ner på sidan har jag inkluderat en bild av företagets kontor, vilket ger en professionell och pålitlig känsla. Detta visar att JensenFlix har en fysisk närvaro och etablerade lokaler, vilket kan inge trygghet hos användarna.
 
-Kontaktinformation längst ner: Längst ner finns företagets kontaktuppgifter, som inkluderar adress, telefonnummer och e-post. Denna placering gör det lättillgängligt för användaren att hitta all kontaktinformation på ett och samma ställe, utan att behöva leta genom sidan. Jag skapar med flex böx till profilekard.  
+Kontaktinformation längst ner: Längst ner finns företagets kontaktuppgifter, som inkluderar adress, telefonnummer och e-post. Denna placering gör det lättillgängligt för användaren att hitta all kontaktinformation på ett och samma ställe, utan att behöva leta genom sidan. Jag skapar med flex böx till profilekard. 
