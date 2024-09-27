@@ -29,13 +29,55 @@ bakgrund: #19161c
 tema: #512B81
 
 
-# Grafisk Profil (Filmsida Jonatan)
+# Verksamhetsbeskrivning
+Vår streamingplattform erbjuder användare enkel och obegränsad tillgång till ett brett urval av filmer och serier från olika genrer och regioner. Med fokus på högkvalitativt innehåll och användarvänlighet, tillhandahåller vi ett omfattande bibliotek som ständigt uppdateras med de senaste titlarna samt klassiker från både stora studios och oberoende skapare.
+
+Vi strävar efter att ge våra användare en flexibel och personlig underhållningsupplevelse, med funktioner som topplistor, offline-tjänster, samt stöd för att streama innehåll på flera enheter utan hushållsbegränsningar. Plattformen är tillgänglig dygnet runt, utan reklamavbrott, och kan användas genom ett abonnemang som betalas månad till månad.
+
+Vår vision är att bli den ledande destinationen för strömmande underhållning, där användarna alltid hittar något nytt att upptäcka, oavsett smak eller preferens.
+
+# Gruppmedlemmarnas tilldelade uppgifter
+## Jonathan
+- Filmer
+
+## Axel
+- Förstasidan/Index
+- Sök Filmer & Serier
+
+## Hampus
+- Logga in
+- Registrering
+
+## Roza
+- Kontakta Oss
+- Om Oss
+
+# Grafisk Profil
 
 ## Färgval:
 Mörklila, lila och ljusblå är de dominerande färgerna, med inslag av vitt och nyanser av lila. Lila nyanser förknippas ofta med dramatik, lyx, premium, framgång och kreativitet. Den lila färgen skapar en stark identitet och ger en modern känsla, vilket ger en sofistikerad kontrast och bra läsbarhet. Blått är en väldigt populär färg i webbdesign och både blått och lila upplevs ofta som seriösa, trygga och lugnande.
 
 ## Typografi:
 Användningen av **Roboto** som huvudtypsnitt, med *sans-serif* som fallback, ger sidan en modern och ren känsla. Typsnittet är lättläst både på stora skärmar och mindre enheter, vilket förbättrar användarupplevelsen genom att säkerställa god läsbarhet.
+
+# Jonathans Sidor
+## Filmer
+skriv text!
+
+# Axels Sidor
+## Förstasidan/Index
+skriv text!
+
+## Sök Filmer & Serier
+skriv text
+
+
+------------------------------------------
+
+
+## Sidor
+### 1.0 Framsidan/Index
+Skapad av: Person
 
 ## Bildmaterial:
 Bilder på filmerna är centralt placerade och användningen av affischer i bildkort ger en känsla av att bläddra i en digital videobutik. Detta gör sidan mer visuell och engagerande.
