@@ -99,7 +99,7 @@ Layouten är välbalanserad mellan horisontella och vertikala element. På deskt
 ### UX-perspektiv (Användarupplevelse)
 
 #### Responsivitet:
-Förstasidan är en responsiv design för både Desktop, Tablet och Mobil, beroende på vad man använder. På desktop täcker elementen skärmen mer horisontalt, och på tablet och mobilen blir det en mer vertikal användarupplevelse, där elementen placeras under varandra, istället för brevid.
+Förstasidan är en responsiv design för både Desktop, Tablet och Mobil, beroende på vad man använder. På desktop täcker elementen skärmen mer horisontalt med flexbox, och på tablet och mobilen blir det en mer vertikal användarupplevelse, där elementen placeras under varandra, istället för brevid.
 
 #### Struktur och Syfte
 De olika sektionerna är placerade på ett sätt som ska öka sannolikheten att användaren betalar för tjänsten, och ju längre ner man scrollar, så ser användaren mer och mer försök i att få den att betala för tjänsten genom att locka den, utifall de tidigare försöken inte lyckats. Samt att hela sidan är designad för att visa vad tjänsten har att erbjuda, samt varför man ska betala för tjänsten.
@@ -118,6 +118,9 @@ Till sist kommer vi till slutet på sidan och där visas ett generellt utbud av 
 Det finns stora och tydliga knappar för att göra det enkelt för användaren att betala för tjänsten, och texten är tydlig och läsvänlig för att göra det enkelt för vem som helst att se vad som erbjuds. Utöver detta finns det mer än en möjlighet att göra detta, sammanlagt finns det 3 sätt att bli medlem och börja betala för tjänsten: headern, prisplanerna och "bli medlem" delen i slutet av sidan.
 
 ### UI-perspektiv (Användargränssnitt)
+## Simplistisk Design
+Förstasidan är en väldigt ren design då den inte använder sig av många effekter som t.ex. box shadow, utan förlitar sig mest på bra kontraster mellan olika nyanser av de färger som används.
+
 ## Bilder
 De bilder som används hämtas direkt från IMDb, så användaren alltid ser de officiella posterna från de som skapat serien och filmen. Detta är också ett sätt att göra vissa delar mer igenkännbart, så man kan se direkt vad man letar efter.
 
@@ -129,9 +132,28 @@ Ikoner används för att få vissa delar att "poppa" och kännas mer intressanta
 ![Förstasida Mobile Skiss](images/indexskiss/indexmobile.png)
 
 ## Sök Filmer & Serier
-skriv text
 
+### UX-perspektiv (Användarupplevelse)
 
+#### Responsivitet:
+Sök sidan är en responsiv design för både Desktop, Tablet och Mobil, beroende på vad man använder. På desktop täcker elementen skärmen med en grid-layout, på tablet och mobil så minskas bredden på sökresultaten, och den blir tillslut till en lista där alla sökresultat placeras under varandra. Även filtreringen ändras från att vara knappar man trycker på, på desktop och tablet, till en dropdown lista på mobil.
 
+#### Oändlig Scrolling
+Sökresultaten visas med "oändlig scrolling", alltså att sökresultat laddas in dynamiskt beroende på om användaren scrollar längre ner på sidan. Detta minskar tiden användaren spenderar på att navigera mellan sidorna, och gör det också lättare i framtiden för servern som bara behöver hämta den mängd data från databasen som faktiskt behövs.
+
+#### Dynamiska Sökresultat
+Sök sidan är gjort med tanken att man ska kunna använda den utan att någonsin behöva ladda om sidan. Sökresultaten ska uppdateras dynamiskt om man t.ex. trycker på en kategori eller sorterar.
+
+### UI-perspektiv (Användargränssnitt)
+
+#### Tydlighet
+Sökrutan som man skriver i för att söka är stor och har även en sök ikon längst till höger för att visa användaren att det är där men söker efter serier och filmer.
+
+#### Filtrering och Sortering
+Filteringen och sortering är designat på ett sätt som gör det enkelt för användaren att förstå vad som händer, genom att ändra bakgrundsfärgen på knapparna man trycker på när man vill filtrera något.
+
+![Sök Desktop Skiss](images/sokskiss/sokdesktop.png)
+![Sök Tablet Skiss](images/sokskiss/soktablet.png)
+![Sök Mobile Skiss](images/sokskiss/sokmobile.png)
 
 färgschema: mörkt + lila (se CSS för hex koder)
