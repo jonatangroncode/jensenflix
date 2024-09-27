@@ -21,13 +21,7 @@ vem som gör vilken sida:
 - lista med filmer: jonatan
 - om oss & kontakta oss: roza
 
-sidor som ska göras: förstasidan, sida med lista över filmer
-
-
-färgschema: https://colorhunt.co/palette/2e073f7a1cacad49e1ebd3f8
-bakgrund: #19161c
-tema: #512B81
-
+färgschema från: https://colorhunt.co/palette/35155d512b814477ce8cabff
 
 # Verksamhetsbeskrivning
 Vår streamingplattform erbjuder användare enkel och obegränsad tillgång till ett brett urval av filmer och serier från olika genrer och regioner. Med fokus på högkvalitativt innehåll och användarvänlighet, tillhandahåller vi ett omfattande bibliotek som ständigt uppdateras med de senaste titlarna samt klassiker från både stora studios och oberoende skapare.
@@ -156,4 +150,3 @@ Filteringen och sortering är designat på ett sätt som gör det enkelt för an
 ![Sök Tablet Skiss](images/sokskiss/soktablet.png)
 ![Sök Mobile Skiss](images/sokskiss/sokmobile.png)
 
-färgschema: mörkt + lila (se CSS för hex koder)
