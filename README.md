@@ -61,3 +61,7 @@ tema: #512B81
 
 ## Horisontell och vertikal balans:
       Layouten är välbalanserad mellan horisontella och vertikala element. På desktop finns en tydlig sidomeny till vänster med profiler för skådespelare som medverkar i filmen man hovrar på (exempelvis **Ben Affleck** och **Henry Cavill**), vilket gör användarupplevelsen mer dynamisk. På mobil och tablet försvinner denna meny för att spara plats, vilket förbättrar den vertikala skrollupplevelsen.
+
+![Filmsida Desktop Skiss](images/filmsidaskiss/filmsidadesktop.png)
+![Filmsida Tablet Skiss](images/filmsidaskiss/filmsidatablet.png)
+![Filmsida Mobile Skiss](images/filmsidaskiss/filmsidamobile.png)
