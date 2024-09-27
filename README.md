@@ -31,7 +31,7 @@ Vi strävar efter att ge våra användare en flexibel och personlig underhållni
 Vår vision är att bli den ledande destinationen för strömmande underhållning, där användarna alltid hittar något nytt att upptäcka, oavsett smak eller preferens.
 
 # Gruppmedlemmarnas tilldelade uppgifter
-## Jonathan
+## Jonatan
 - Filmer
 
 ## Axel
