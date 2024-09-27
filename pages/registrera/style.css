@@ -25,7 +25,7 @@
 }
 
 input[type="text"], input[type="password"] {
-    width: 90%;
+    width: 100%;
     border: 1px solid black;
     border-radius: 5px;
     height: 40px;
@@ -48,8 +48,14 @@ input[type="submit"] {
     width: 50%;
     margin: 0 100px;
     display: block;
-
 }
+
+input[type=submit]:hover {
+    background-color: rgb(25, 141, 25);
+    cursor: pointer;
+}
+
+
 
 .regbutton {
     display: inline-block;
@@ -85,13 +91,13 @@ input[type="submit"] {
     color:rgb(255, 255, 255)
 }
 
-label a {
+label a, #nothing {
     color: rgb(149, 85, 146);
     text-decoration: none;
     font-weight: bold;
 }
 
-label a:hover {
+label a:hover, #nothing:hover {
     color: rgb(232, 222, 157);
     text-decoration: underline;
 }
@@ -99,6 +105,11 @@ label a:hover {
 .logo-container img {
     width: 140px;
     height: auto;
+}
+
+.payment-cont {
+    background-color: rgb(140, 140, 140);
+    padding: 1px;
 }
 
 .villkor-container {
