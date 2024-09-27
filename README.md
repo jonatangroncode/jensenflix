@@ -17,17 +17,15 @@ vem som gör vad i baslayouten:
 
 vem som gör vilken sida: 
 - registrering, inloggning och betalmetod: hampus
-- förstasidan: axel
+- förstasidan & sök : axel
 - lista med filmer: jonathan
 - om oss & kontakta oss: roza
 
 sidor som ska göras: förstasidan, sida med lista över filmer
 
-färgschema: https://colorhunt.co/palette/2e073f7a1cacad49e1ebd3f8
-bakgrund: #19161c
-tema: #512B81
+färgschema: mörkt + lila (se CSS för hex koder)
 
-grafisk profil axel:
+Grafisk profil första sidan (Axel):
 Färgerna som ska användas i sidan har tänkt på mörkt läge med en mörklila färg (se loggan), oftast då användaren använder tjänsten på kvällen då det är mörkt, och då är det trevligt om designen också är mörk, så man inte sitter i mörkret och blir bländad av vita färger. Detta syns dock inte i skissen då jag valde att jobba mest med svarta/vita färger.
 
 Headern har designats för att fånga användarens fokus, genom att med stor text komma med ett generöst erbjudande där de får 3 månader gratis när de skapar ett abonnemang hos tjänsten. Knappen för att bli medlem är stor och täcker en stor yta så att den inte går att missa, och det finns även en liten fotnot för de som tror att man bara kan skapa ett oändligt antal konton för att få erbjudandet igen, för det gäller bara en gång per kund. Eftersom att headern ska täcka mestadels av sidan när man först laddar in den (i toppen) så finns det även en stor bakgrundsbild som är blurrad, vilket kommer från Game of Thrones. Alltså är detta användaren kommer att se när de först besöker sidan, att det finns ett stort erbjudande för dem, vilket kan locka dem att betala för tjänsten.
