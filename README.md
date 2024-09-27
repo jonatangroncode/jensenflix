@@ -95,32 +95,43 @@ Layouten är välbalanserad mellan horisontella och vertikala element. På deskt
 
 # Axels Sidor
 ## Förstasidan/Index
-skriv text!
+
+### UX-perspektiv (Användarupplevelse)
+
+#### Responsivitet:
+Förstasidan är en responsiv design för både Desktop, Tablet och Mobil, beroende på vad man använder. På desktop täcker elementen skärmen mer horisontalt, och på tablet och mobilen blir det en mer vertikal användarupplevelse, där elementen placeras under varandra, istället för brevid.
+
+#### Struktur och Syfte
+De olika sektionerna är placerade på ett sätt som ska öka sannolikheten att användaren betalar för tjänsten, och ju längre ner man scrollar, så ser användaren mer och mer försök i att få den att betala för tjänsten genom att locka den, utifall de tidigare försöken inte lyckats. Samt att hela sidan är designad för att visa vad tjänsten har att erbjuda, samt varför man ska betala för tjänsten.
+
+I headern ser man ett generöst erbjudande, och direkt efter under detta får man tillgång till de olika prisplanerna som finns, vilket kan få användaren att tänka på hur värt det är och hur mycket pengar de skulle spara på erbjudandet. Här visas exakt vad man får i alla paket, men samt vad man inte får, så det går att jämföra alla paket. Det paketet i mitten är större än de andra, för att försöka få användaren att köpa just det paketet, då det är dyrare än det billigaste paketet men billigare än det dyraste, det är i mitten och innehåller nästan allt man behöver.
+
+Sen om användaren undrar vad man mer kan få för pengarna, så ser man de mest populära serierna och filmerna just nu. Om användaren ser något som lockar är det också mer sannolikt att de betalar för tjänsten, speciellt om det är någon serie som är popular just då, som tjänsten erbjuder.
+
+Om man fortfarande inte är helt säker, eller om det inte finns något som intresserar en, visas en del där man ser vad mer man får som medlem. Det som verkligen ska locka här är flexibiliteten och hur användarvänligt det är. Då många tjänster som Netflix idag bara tillåter en användare åt gången, kommer tjänsten arbjuda oändligt många användare osv. Alltså inga begränsningar alls. Detta ska ge tjänsten en fördel över de andra tjänsterna och få användaren att betala för vår tjänst istället.
+
+Under detta har vanliga frågor placerats, med svar. Istället för att behöva Googla eller kontakt kundtjänst så visar man de vanligaste frågorna på framsidan istället, där de kan kommas åt enkelt. Jag har valt att använda mig av ett system där man klickar på en fråga och så visas en box med svaret, detta för att jag inte vill att frågor och svar ska ta upp så mycket utrymme.
+
+Till sist kommer vi till slutet på sidan och där visas ett generellt utbud av filmer och serier som användaren lite snabbt kan kolla igenom (sidvis), och om de då ser något de gillar behöver de inte scrolla upp hela vägen till toppen igen, för då finns det ett input precis under detta där de kan skriva in sin e-post address och snabbregistrera sig. Jag gjorde det på det här sättet för att försöka locka användaren att bli medlem, då det är väldigt enkelt, allt de ser är att de behöver skriva in sin e-post address.
+
+#### Användarinteraktion
+Det finns stora och tydliga knappar för att göra det enkelt för användaren att betala för tjänsten, och texten är tydlig och läsvänlig för att göra det enkelt för vem som helst att se vad som erbjuds. Utöver detta finns det mer än en möjlighet att göra detta, sammanlagt finns det 3 sätt att bli medlem och börja betala för tjänsten: headern, prisplanerna och "bli medlem" delen i slutet av sidan.
+
+### UI-perspektiv (Användargränssnitt)
+## Bilder
+De bilder som används hämtas direkt från IMDb, så användaren alltid ser de officiella posterna från de som skapat serien och filmen. Detta är också ett sätt att göra vissa delar mer igenkännbart, så man kan se direkt vad man letar efter.
+
+## Ikoner
+Ikoner används för att få vissa delar att "poppa" och kännas mer intressanta för användaren.
+
+![Förstasida Desktop Skiss](images/indexskiss/indexdesktop.png)
+![Förstasida Tablet Skiss](images/indexskiss/indextablet.png)
+![Förstasida Mobile Skiss](images/indexskiss/indexmobile.png)
 
 ## Sök Filmer & Serier
 skriv text
 
 
-------------------------------------------
-
-
 
 
 färgschema: mörkt + lila (se CSS för hex koder)
-
-Grafisk profil första sidan (Axel):
-Färgerna som ska användas i sidan har tänkt på mörkt läge med en mörklila färg (se loggan), oftast då användaren använder tjänsten på kvällen då det är mörkt, och då är det trevligt om designen också är mörk, så man inte sitter i mörkret och blir bländad av vita färger. Detta syns dock inte i skissen då jag valde att jobba mest med svarta/vita färger.
-
-Headern visas på alla sidorna, och har designats för att fånga användarens fokus, genom att med stor text komma med ett generöst erbjudande där de får 3 månader gratis när de skapar ett abonnemang hos tjänsten. Knappen för att bli medlem är stor och täcker en stor yta så att den inte går att missa, och det finns även en liten fotnot för de som tror att man bara kan skapa ett oändligt antal konton för att få erbjudandet igen, för det gäller bara en gång per kund. Eftersom att headern ska täcka mestadels av sidan när man först laddar in den (i toppen) så finns det även en stor bakgrundsbild som är blurrad, vilket kommer från Game of Thrones. Alltså är detta användaren kommer att se när de först besöker sidan, att det finns ett stort erbjudande för dem, vilket kan locka dem att betala för tjänsten.
-
-Priserna som visas har designats så att den prisplanen som är "mest värt för pengarna" lyfts fram och är större än de andra, för att försöka få användaren att välja just den prisplanen. Den prisplanen är lite dyrare än den billigaste men billigare än den dyraste, och erbjuder ändå nästan allt, vilken får användaren att tro att det är en bra deal. Jag har också valt att visa användaren vad de får för sina pengar, vad prisplanen erbjuder, just för att de ska lockas att köpa det.
-
-Om användaren inte är helt säker på om de vill köpa tjänsten än, har jag placerat de 5 trendigaste och mest populäraste filmerna och serierna under priserna. De kommer att fortsätta scrolla lite och förhoppningsvis plötsligt se att det finns något som just de tycker om på den här tjänsten, och då kommer de betala för att kunna titta på det. Bilderna som används för detta är poster-bilderna från IMDb.
-
-Om man fortfarande inte är helt säker, eller om det inte finns något som intresserar en, visas en del där man ser vad mer man får som medlem. Det som verkligen ska locka här är flexibiliteten och hur användarvänligt det är. Då många tjänster som Netflix idag bara tillåter en användare åt gången, kommer tjänsten arbjuda oändligt många användare osv. Alltså inga begränsningar alls. Detta ska ge tjänsten en fördel över de andra tjänsterna och få användaren att betala för vår tjänst istället.
-
-Under detta har vanliga frågor placerats, med svar. Istället för att behöva Googla eller kontakt kundtjänst så visar man de vanligaste frågorna på framsidan istället, där de kan kommas åt enkelt. Jag har valt att använda mig av ett system (i teorin) där man klickar på en fråga och så visas en box med svaret, detta för att jag inte vill att frågor och svar ska ta upp så mycket utrymme.
-
-Till sist kommer vi till slutet på sidan och där visas ett generellt utbud av filmer och serier som användaren lite snabbt kan kolla igenom (sidvis), och om de då ser något de gillar behöver de inte scrolla upp hela vägen till toppen igen, för då finns det ett input precis under detta där de kan skriva in sin e-post address och snabbregistrera sig. Jag gjorde det på det här sättet för att försöka locka användaren att bli medlem, då det är väldigt enkelt, allt de ser är att de behöver skriva in sin e-post address.
-
-
