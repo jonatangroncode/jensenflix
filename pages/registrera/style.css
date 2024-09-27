@@ -9,6 +9,7 @@
 .reglogincontainer {
     margin: auto;
     margin-top: 40px;
+    margin-bottom: 40px;
     padding: 20px;
     max-width: 520px;
     max-height: auto;
@@ -20,14 +21,23 @@
 .reglogincontainer h1 {
     text-align: center;
     color: purple;
+    font-weight: bold;
 }
 
 input[type="text"], input[type="password"] {
     width: 90%;
-    border: 2px solid purple;
+    border: 1px solid black;
     border-radius: 5px;
-    height: 20px;
+    height: 40px;
     padding: 3px;
+    background-color: rgb(140, 140, 140);
+    color: white;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: blueviolet;
+    outline: black;
+    border: 3px solid blueviolet;
 }
 
 input[type="submit"] {
@@ -36,6 +46,9 @@ input[type="submit"] {
     padding: 10px;
     border-radius: 5px;
     width: 50%;
+    margin: 0 100px;
+    display: block;
+
 }
 
 .regbutton {
@@ -66,6 +79,10 @@ input[type="submit"] {
 .loginbutton:hover {
     background-color: blueviolet;
     color: white;
+}
+
+#nothing {
+    color:rgb(255, 255, 255)
 }
 
 label a {
