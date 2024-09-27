@@ -16,25 +16,25 @@ body {
 
 .hero {
     position: relative;
-    background-image: url('images/omoss.jpg'); 
+    background-image: url('../../images/omoss.jpg'); 
     background-size: cover;
     background-position: center;
     height: 100vh; 
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    color: rgb(55, 4, 4); 
+    color: var(--text-color); 
 }
 
 .hero h2 {
     position: absolute;
     font-size: 3rem;
-    background: rgb(239, 232, 232); 
+    background: var(--text-color); 
     padding: 10px 20px; 
     border-radius: 5px; 
 }
 
-.about-us {
+.about-us h2, p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
