@@ -32,19 +32,24 @@ Vår vision är att bli den ledande destinationen för strömmande underhållnin
 
 # Gruppmedlemmarnas tilldelade uppgifter
 ## Jonatan
-- Filmer
+- Footer
+- Filmer (sida)
 
 ## Axel
-- Förstasidan/Index
-- Sök Filmer & Serier
+- Header
+- Logga
+- Förstasidan/Index (sida)
+- Sök Filmer & Serier (sida)
 
 ## Hampus
-- Logga in
-- Registrering
+- Meny
+- Logga in (sida)
+- Registrering (sida)
 
 ## Roza
-- Kontakta Oss
-- Om Oss
+- Footer
+- Kontakta Oss (sida)
+- Om Oss (sida)
 
 # Grafisk Profil
 
