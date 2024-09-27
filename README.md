@@ -150,3 +150,25 @@ Filteringen och sortering är designat på ett sätt som gör det enkelt för an
 ![Sök Tablet Skiss](images/sokskiss/soktablet.png)
 ![Sök Mobile Skiss](images/sokskiss/sokmobile.png)
 
+
+
+
+#### Hampus sidor
+
+Har skapat en navigation bar och sidor för att logga in och registrera användare. 
+
+Till navigation baren började jag med placering av alla länkar med hjälp av grid-template columns, men det dök upp en del problem med placering av alla länkar, som hamnade lite tokigt. När jag ändrade det till flex och det löste problemen. 
+
+Login och registrera knapparna är placerade längst till höger på navbaren eftersom det är lättåtkomligt och enkelt för de flesta användare att hitta. Användaren söker sig oftast naturligt längst upp till höger för att hitta till de sidorna.
+
+“JensenFlix” logon figurerar som en logo och länk på navbaren, och den är placerad längst till vänster. Det är en av de vanligaste layouten där företagets logo “presenterar” resten av sidan. Majoriteten av befolkningen läser en sida uppifrån och ner, vänster till höger. Därför är det rimligt att företagets logo är det första man ser. På motsatt sida är en viktig funktion, alltså login / registrera. 
+
+Olika spalter för Filmer/Serier/Sport är placerade i mitten av navbaren. Navbaren innehåller bland de viktigaste sakerna som användaren vill åt, därför är de länkarna placerade där. 
+
+Har vidare byggt på layout och styling för sidorna för inlogg och registrering.
+
+![Reg/Login Desktop Skiss](images/loginregskiss/MallDesktop.png)
+![Reg/Login Tablet Skiss](images/loginregskiss/MallTablet.png)
+![Reg/Login Mobile Skiss](images/loginregskiss/MallMobile.png)
+
+
