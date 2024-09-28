@@ -31,20 +31,25 @@ Vi strävar efter att ge våra användare en flexibel och personlig underhållni
 Vår vision är att bli den ledande destinationen för strömmande underhållning, där användarna alltid hittar något nytt att upptäcka, oavsett smak eller preferens.
 
 # Gruppmedlemmarnas tilldelade uppgifter
-## Jonathan
-- Filmer
+## Jonatan
+- Footer
+- Filmer (sida)
 
 ## Axel
-- Förstasidan/Index
-- Sök Filmer & Serier
+- Header
+- Logga
+- Förstasidan/Index (sida)
+- Sök Filmer & Serier (sida)
 
 ## Hampus
-- Logga in
-- Registrering
+- Meny
+- Logga in (sida)
+- Registrering (sida)
 
 ## Roza
-- Kontakta Oss
-- Om Oss
+- Footer
+- Kontakta Oss (sida)
+- Om Oss (sida)
 
 # Grafisk Profil
 
@@ -83,9 +88,9 @@ På desktop används ett flerradigt grid-system för att maximera utrymmet och v
 #### Horisontell och vertikal balans:
 Layouten är välbalanserad mellan horisontella och vertikala element. På desktop finns en tydlig sidomeny till vänster med profiler för skådespelare som medverkar i filmen man hovrar på (exempelvis **Ben Affleck** och **Henry Cavill**), vilket gör användarupplevelsen mer dynamisk. På mobil och tablet försvinner denna meny för att spara plats, vilket förbättrar den vertikala skrollupplevelsen.
 
-![Filmsida Desktop Skiss](images/filmsidaskiss/filmsidadesktop.png)
-![Filmsida Tablet Skiss](images/filmsidaskiss/filmsidatablet.png)
-![Filmsida Mobile Skiss](images/filmsidaskiss/filmsidamobile.png)
+![Filmsida Desktop Skiss](images/mockskissar/filmsidaskiss/filmsidadesktop.png)
+![Filmsida Tablet Skiss](images/mockskissar/filmsidaskiss/filmsidatablet.png)
+![Filmsida Mobile Skiss](images/mockskissar/filmsidaskiss/filmsidamobile.png)
 
 # Axels Sidor
 ## Förstasidan/Index
@@ -121,9 +126,9 @@ De bilder som används hämtas direkt från IMDb, så användaren alltid ser de 
 ## Ikoner
 Ikoner används för att få vissa delar att "poppa" och kännas mer intressanta för användaren.
 
-![Förstasida Desktop Skiss](images/indexskiss/indexdesktop.png)
-![Förstasida Tablet Skiss](images/indexskiss/indextablet.png)
-![Förstasida Mobile Skiss](images/indexskiss/indexmobile.png)
+![Förstasida Desktop Skiss](images/mockskissar/indexskiss/indexdesktop.png)
+![Förstasida Tablet Skiss](images/mockskissar/indexskiss/indextablet.png)
+![Förstasida Mobile Skiss](images/mockskissar/indexskiss/indexmobile.png)
 
 ## Sök Filmer & Serier
 
@@ -172,3 +177,40 @@ Har vidare byggt på layout och styling för sidorna för inlogg och registrerin
 ![Reg/Login Mobile Skiss](images/loginregskiss/MallMobile.png)
 
 
+# Hampus Sidor
+
+Har skapat en navigation bar och sidor för att logga in och registrera användare. 
+
+Till navigation baren började jag med placering av alla länkar med hjälp av grid-template columns, men det dök upp en del problem med placering av alla länkar, som hamnade lite tokigt. När jag ändrade det till flex och det löste problemen. 
+
+Login och registrera knapparna är placerade längst till höger på navbaren eftersom det är lättåtkomligt och enkelt för de flesta användare att hitta. Användaren söker sig oftast naturligt längst upp till höger för att hitta till de sidorna.
+
+“JensenFlix” logon figurerar som en logo och länk på navbaren, och den är placerad längst till vänster. Det är en av de vanligaste layouten där företagets logo “presenterar” resten av sidan. Majoriteten av befolkningen läser en sida uppifrån och ner, vänster till höger. Därför är det rimligt att företagets logo är det första man ser. På motsatt sida är en viktig funktion, alltså login / registrera. 
+
+Olika spalter för Filmer/Serier/Sport är placerade i mitten av navbaren. Navbaren innehåller bland de viktigaste sakerna som användaren vill åt, därför är de länkarna placerade där. 
+
+Har vidare byggt på layout och styling för sidorna för inlogg och registrering.
+
+![Reg/Login Skiss](images/mockskissar/regloginskiss/MallDesktop.jpg)
+![Reg/Login Tablet Skiss](images/mockskissar/regloginskiss/MallTablet.jpg)
+![Reg/Login Mobile Skiss](images/mockskissar/regloginskiss/MallMobile.jpg)
+
+# Rozas Sidor
+
+## Om Oss Sidan
+Den stora bilden med personer som tittar på film skapar omedelbart en känslomässig koppling till användaren och representerar kärnupplevelsen av JensenFilm – att samla människor för att njuta av film och underhållning. Under huvudbilden finns en kort introducerande text som välkomnar användaren och förklarar plattformens syfte. Det är vilket ger en snabb förståelse av vad Jensenflix erbjuder. Till höger visas en bild av tjänsten på mobiltelefoner, vilket tydligt kommunicerar tillgängligheten på olika enheter.  finns statistik (38 miljoner användare, 200+ kanaler) som bygger trovärdighet och ger konkreta skäl att använda tjänsten. Längst ner på sidan placeras logotyper av välkända samarbetspartners för att bygga förtroende och ge en stark påminnelse om att Jensenflix arbetar med betrodda varumärken, vilket ökar trovärdigheten och tryggheten för potentiella kunder. Jag använder css-grid på den här sida förutom hero section.
+
+![Om Oss Desktop Skiss](images/mockskissar/omskiss/omdesktop.png)
+![Om Oss Tablet Skiss](images/mockskissar/omskiss/ommobil.png)
+![Om Oss Mobile Skiss](images/mockskissar/omskiss/omtablet.png)
+
+## Kontakt Oss Sidan
+Plats för kontaktpersoner (cirklar): Jag har skapat en sektion med cirkulära bilder för kontaktpersoner, där varje cirkel representerar en person. Genom att använda cirklar skapar vi en visuell sammanhållning och enkelhet. Cirklarna är jämnt fördelade för att ge en ren och organiserad känsla, vilket gör det lätt för användaren att förstå vem de kan kontakta för specifika behov.
+
+Bild på kontorsbyggnaden: Längre ner på sidan har jag inkluderat en bild av företagets kontor, vilket ger en professionell och pålitlig känsla. Detta visar att JensenFlix har en fysisk närvaro och etablerade lokaler, vilket kan inge trygghet hos användarna.
+
+Kontaktinformation längst ner: Längst ner finns företagets kontaktuppgifter, som inkluderar adress, telefonnummer och e-post. Denna placering gör det lättillgängligt för användaren att hitta all kontaktinformation på ett och samma ställe, utan att behöva leta genom sidan. Jag skapar med flex böx till profilekard. 
+
+![Kontakta Oss Desktop Skiss](images/mockskissar/kontaktskiss/kontaktdesktop.png)
+![Kontakta Oss Tablet Skiss](images/mockskissar/kontaktskiss/kontakttablet.png)
+![Kontakta Oss Mobile Skiss](images/mockskissar/kontaktskiss/kontaktmobil.png)
