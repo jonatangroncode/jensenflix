@@ -251,3 +251,27 @@ footer ul {
 .icon-search {
     background-image: url("../images/searchicon.svg");
 }
+
+.icon-tv {
+    background-image: url("../images/tv.svg");
+}
+
+.icon-household {
+    background-image: url("../images/household.svg");
+}
+
+.icon-offline {
+    background-image: url("../images/offline.svg");
+}
+
+.icon-profiles {
+    background-image: url("../images/profiles.svg");
+}
+
+.icon-arrow-down {
+    background-image: url("../images/arrowdown.svg");
+}
+
+.icon-arrow-up {
+    background-image: url("../images/arrowup.svg");
+}
