@@ -13,36 +13,37 @@
     padding: 20px;
     max-width: 520px;
     max-height: auto;
-    background-color: rgb(48, 47, 47);
-    border-radius: 10px;
-    color: rgb(255, 255, 255);
+    background-color: #2E073F;
+    border-radius: 20px;
+    color: rgb(149, 85, 146);
+    font-weight: bold;
 }
 
 .reglogincontainer h1 {
     text-align: center;
-    color: purple;
+    color: #7A1CAC;
     font-weight: bold;
 }
 
 input[type="text"], input[type="password"] {
     width: 100%;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 10px;
     height: 40px;
     padding: 3px;
-    background-color: rgb(140, 140, 140);
+    background-color: #7A1CAC;
     color: white;
 }
 
 input[type="text"]:focus, input[type="password"]:focus {
-    border-color: blueviolet;
+    border-color: #7A1CAC;
     outline: black;
     border: 3px solid blueviolet;
 }
 
 input[type="submit"] {
-    background-color: green;
-    color: white;
+    background-color: #AD49E1;
+    color: #EBD3F8;
     padding: 10px;
     border-radius: 5px;
     width: 50%;
@@ -51,44 +52,48 @@ input[type="submit"] {
 }
 
 input[type=submit]:hover {
-    background-color: rgb(25, 141, 25);
+    background-color: #EBD3F8;
     cursor: pointer;
+    color: #2E073F;
 }
 
 
 
 .regbutton {
     display: inline-block;
-    background-color: rgb(142, 84, 161);
-    color: white;
+    background-color: #AD49E1;
+    color: #EBD3F8;
     padding: 5px;
-    border: 2px solid purple;
-    border-radius: 5px;
+    border: 2px solid #7A1CAC;
+    border-radius: 10px;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .regbutton:hover {
-    background-color: blueviolet;
-    color: white;
+    background-color: #EBD3F8;
+    color: #AD49E1;
 }
 
 .loginbutton {
     display: inline-block;
-    background-color: rgb(142, 84, 161);
-    color: white;
+    background-color: #AD49E1;
+    color: #EBD3F8;
     padding: 5px;
-    border: 2px solid purple;
-    border-radius: 5px;
+    border: 2px solid #7A1CAC;
+    border-radius: 10px;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .loginbutton:hover {
-    background-color: blueviolet;
-    color: white;
+    background-color: #EBD3F8;
+    color: #7A1CAC;
+    font-weight: bold;
 }
 
 #nothing {
-    color:rgb(255, 255, 255)
+    color:#EBD3F8
 }
 
 label a, #nothing {
@@ -98,7 +103,7 @@ label a, #nothing {
 }
 
 label a:hover, #nothing:hover {
-    color: rgb(232, 222, 157);
+    color: #EBD3F8;
     text-decoration: underline;
 }
 
@@ -108,8 +113,9 @@ label a:hover, #nothing:hover {
 }
 
 .payment-cont {
-    background-color: rgb(140, 140, 140);
+    background-color: #AD49E1;
     padding: 1px;
+    border-radius: 10px;
 }
 
 .villkor-container {
