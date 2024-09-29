@@ -53,7 +53,7 @@
 .prices {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 60px;
     margin: 100px 0;
 }
@@ -67,7 +67,7 @@
     height: fit-content;
 }
 
-.prices .plan:nth-child(2) {
+.prices .plan:nth-child(3) {
     transform: scale(1.1);
 }
 
