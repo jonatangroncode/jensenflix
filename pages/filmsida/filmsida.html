@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../styles/global.css" />
+    <link rel="stylesheet" href="../../styles/_variables.css" />
+  </head>
+  <body>
+    <div class="filtercontainer">
+      <h2>Filmer</h2>
+      <div class="selectioncontainer">
+        <div class="selection">
+          <label for="genre">Genres</label>
+          <select id="genre">
+            <option value="">Alla</option>
+            <option value="action">Action</option>
+            <option value="comedy">Komedi</option>
+            <option value="drama">Drama</option>
+            <option value="horror">Horror</option>
+          </select>
+        </div>
+
+        <div class="selection">
+          <label for="year">År</label>
+          <select id="year">
+            <option value="">Alla</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+          </select>
+        </div>
+
+        <div class="selection">
+          <label for="sortering">Sortering</label>
+          <select id="Sortering">
+            <option value="">Alla</option>
+            <option value="A-Ö">A-Ö</option>
+            <option value="Ö-A">Ö-A</option>
+            <option value="Senaste">Senaste</option>
+            <option value="Äldsta">Äldsta</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="contentcontainer">
+      <aside>
+        <h3>Sidomeny</h3>
+        <ul>
+          <li><a href="#">Sidomeny 1</a></li>
+          <li><a href="#">Sidomeny 2</a></li>
+          <li><a href="#">Sidomeny 3</a></li>
+        </ul>
+      </aside>
+
+      <div class="hr"></div>
+
+      <div class="moviegrid">
+        <div class="film">
+          <img src="../../images/moviepostersgrid/blackpanter.png" alt="Film 1" />
+          <h2>blackpantekuvuuvkj </h2>
+        </div>
+        <div class="film">
+          <img src="../../images/moviepostersgrid/blackpanter.png" alt="Film 2" />
+          <h2>Film 2 Titel</h2>
+        </div>
+        <div class="film">
+          <img src="../../images/moviepostersgrid/blackpanter.png" alt="Film 2" />
+          <h2>Film 2 Titel</h2>
+        </div>
+        <div class="film">
+          <img src="../../images/moviepostersgrid/blackpanter.png" alt="Film 2" />
+          <h2>Film 2 Titel</h2>
+        </div>
+        <div class="film">
+          <img src="../../images/moviepostersgrid/blackpanter.png" alt="Film 2" />
+          <h2>Film 2 Titel</h2>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
