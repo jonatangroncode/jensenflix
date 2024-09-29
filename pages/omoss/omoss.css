@@ -7,16 +7,17 @@
 }
  
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
+    font-family: var( --font-family);
+    font-size: var(--font-size);
+    color: var(--text-color);
+    line-height: 1.5;
+
 }
 
 
 .hero {
     position: relative;
-    background-image: url('../../images/omoss.jpg'); 
+    background-image: url('../../images/r-images/stream.jpg'); 
     background-size: cover;
     background-position: center;
     height: 100vh; 
