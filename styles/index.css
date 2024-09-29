@@ -215,7 +215,8 @@
 
 .faq-container ul li:not(.hidden) .question-header .icon-arrow-down,
 .faq-container ul li.hidden:hover .question-header .icon-arrow-down,
-.faq-container ul li.hidden .question-header .icon-arrow-up {
+.faq-container ul li.hidden .question-header .icon-arrow-up,
+.faq-container ul li.hidden p {
     display: none;
 }
 
@@ -227,10 +228,6 @@
 
 .faq-container ul li p {
     margin: 10px 0 0 0;
-}
-
-.faq-container ul li.hidden p {
-    display: none;
 }
 
 .faq-container ul li.hidden:hover p,
