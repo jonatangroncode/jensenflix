@@ -5,7 +5,8 @@
     height: 100vh;
 }
 
-.reglogincontainer, .villkor-container {
+.reglogincontainer,
+.villkor-container {
     margin: auto;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -19,13 +20,15 @@
 
 }
 
-.reglogincontainer h1, .villkor-container h1 {
+.reglogincontainer h1,
+.villkor-container h1 {
     text-align: center;
     color: #7A1CAC;
     font-weight: bold;
 }
 
-input[type="text"], input[type="password"] {
+input[type="text"],
+input[type="password"] {
     width: 100%;
     border: 1px solid black;
     border-radius: 20px;
@@ -35,7 +38,8 @@ input[type="text"], input[type="password"] {
     color: white;
 }
 
-input[type="text"]:focus, input[type="password"]:focus {
+input[type="text"]:focus,
+input[type="password"]:focus {
     outline: black;
     border: 3px solid #7A1CAC;
 }
@@ -54,11 +58,14 @@ input[type="submit"] {
     width: 45%;
 }
 
-input[type=submit]:hover, .regbutton:hover, .loginbutton:hover {
+input[type=submit]:hover,
+.regbutton:hover,
+.loginbutton:hover {
     filter: saturate(1.25);
 }
 
-.regbutton, .loginbutton {
+.regbutton,
+.loginbutton {
     background-color: var(--theme-color);
     padding: 15px;
     border: none;
@@ -87,7 +94,8 @@ input[type=submit]:hover, .regbutton:hover, .loginbutton:hover {
     margin: 0 auto;
 }
 
-label a:hover, #forgotpassword:hover {
+label a:hover,
+#forgotpassword:hover {
     color: #EBD3F8;
     text-decoration: underline;
 }
@@ -97,23 +105,13 @@ label a:hover, #forgotpassword:hover {
     height: auto;
 }
 
-.payment-cont {
-    background-color: #101010;
-    padding: 1px;
-    border-radius: 10px;
-}
-
 label a {
     color: #EBD3F8;
 }
 
-#regbtn {
+#loginbtn, #regbtn {
     width: 100%;
-}
-
-#loginbtn {
-    width: 100%;
-    background-color: #202020;
+    background-color: #512B81;
     padding: 15px;
     border: none;
     border-radius: 60px;
@@ -128,6 +126,51 @@ label a {
     display: inline-block;
 }
 
-#loginbtn:hover {
-    background-color: #261F2C;
+#loginbtn:hover, #regbtn:hover {
+    filter: saturate(1.25);
+}
+
+.payment-cont {
+    background-color: #202020;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+
+}
+
+.payment-option input[type="radio"] {
+    margin-right: 10px;
+}
+
+.input-box {
+    display: flex;
+    margin-left: 10px;
+    flex-direction: column;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    transition: visibility 0s, height 0.2s ease;
+    width: 100%
+}
+
+#card:checked ~ .card-input,
+#swish:checked ~ .swish-input {
+    visibility: visible;
+    height: 60px;
+}
+
+input[type="radio"]:checked + label + .input-box {
+    display: flex;
+}
+
+.card-input, .swish-input {
+    height: 60px;
+    width: 100%;
 }
