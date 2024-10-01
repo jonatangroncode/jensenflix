@@ -300,6 +300,24 @@ footer ul {
     background-image: url("../images/arrowright.svg");
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header .container {
+        width: 90%;
+    }
+
+    .header .container .btns {
+        flex-wrap: wrap;
+    }
+
+    .header .container .btns a {
+        width: 100% !important;
+    }
+
+    .main-container {
+        width: 90%;
+    }
+}
+
 @media (max-width: 768px) {
     .header .container {
         width: 100%;

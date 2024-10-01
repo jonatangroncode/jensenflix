@@ -327,6 +327,51 @@
     width: 25%;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .main-container .prices {
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .main-container .prices .plan:nth-child(2) {
+        transform: scale(1);
+        grid-column: span 2;
+        grid-row: 1 / 2;
+    }
+
+    .main-container .trending-shows ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .main-container .member-offers ul {
+        grid-template-columns: repeat(2, 1fr);
+    }   
+
+    .more-movies .list-controls {
+        padding: 0 20px;
+    }
+
+    .more-movies .movies-container ul {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px 0;
+    }
+
+    .more-movies .movies-container ul > *:nth-child(n+3) {
+        display: none;
+    }
+
+    .email-signup {
+        flex-direction: column;
+    }
+
+    .email-signup input {
+        width: 100% !important;
+    }
+}
+
 @media (max-width: 768px) {
     .main-container .prices {
         grid-template-rows: repeat(3, 1fr);
@@ -376,5 +421,19 @@
 
     .email-signup input {
         width: 100% !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .header {
+        height: fit-content;
+    }
+
+    .more-movies .list-controls {
+        padding: 0;
+    }
+
+    .more-movies .see-more-link {
+        margin: 0 20px;
     }
 }
