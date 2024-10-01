@@ -1,72 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../styles/_variables.css" />
-    <link rel="stylesheet" href="../../styles/global.css" />
-    <link rel="stylesheet" href="style.css">
-    <title>JensenFlix — Streaming för studenter av studenter</title>
-  </head>
-  <body> 
-    <header class="header">
- 
-    </header>
 
-<div class="main-container">
-  <div class="reglogincontainer">
-    <div id="wrapper">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../styles/_variables.css" />
+  <link rel="stylesheet" href="../../styles/global.css" />
+  <link rel="stylesheet" href="style.css">
+  <title>JensenFlix — Streaming för studenter av studenter</title>
+</head>
+
+<body>
+  <header class="header">
+
+  </header>
+
+  <div class="main-container">
+    <div class="reglogincontainer">
+      <div id="wrapper">
         <h1>Registrera nytt konto</h1><br><br>
         <form>
-            <label for="fname">Förnamn :</label><br><br>
-            <input type="text" id="fname" name="fname"><br><br><br>
+          <label for="fname">Förnamn :</label><br><br>
+          <input type="text" id="fname" name="fname"><br><br><br>
 
-            <label for="lname">Efternamn :</label><br><br>
-            <input type="text" id="lname" name="lname"><br><br><br>
+          <label for="lname">Efternamn :</label><br><br>
+          <input type="text" id="lname" name="lname"><br><br><br>
 
-            <label for="email">Email adress :</label><br><br>
-            <input type="text" id="email" name="email"><br><br><br>
+          <label for="email">Email adress :</label><br><br>
+          <input type="text" id="email" name="email"><br><br><br>
 
-            <label for="pword">Välj ett lösenord :</label><br><br>
-            <input type="password" id="pword" name="pword"><br><br><br>
+          <label for="pword">Välj ett lösenord :</label><br><br>
+          <input type="password" id="pword" name="pword"><br><br><br>
 
-            <label for="pword">Upprepa lösenord :</label><br><br>
-            <input type="password" id="pword" name="pword"><br><br><br><br>
+          <label for="pword">Upprepa lösenord :</label><br><br>
+          <input type="password" id="pword" name="pword"><br><br><br><br>
 
-            <h4>Välj betalningsmetod :</h4>
-            
-            <div class="payment-cont">
-                <div class="payment-option">
-                    <input type="radio" id="card" name="payment-method">
-                    <label for="card">
-                        <img src="../../images/card.svg" alt="kort"> Kort
-                    </label>
-                    <div class="input-box card-input">
-                        <label for="card-number"></label>
-                        <input type="text" id="card-number" name="card-number" placeholder="Ange kortnummer">
-                    </div>
-                </div>
+          <h4>Välj betalningsmetod :</h4>
 
-                <div class="payment-option">
-                    <input type="radio" id="swish" name="payment-method">
-                    <label for="swish">
-                        <img src="../../images/swishicon.svg" alt="swish"> Swish
-                    </label>
-                    <div class="input-box swish-input">
-                        <label for="swish-number"></label>
-                        <input type="text" id="swish-number" name="swish-number" placeholder="Ange telefonnummer">
-                    </div>
-                </div>
+          <div class="payment-cont">
+            <div class="payment-option">
+              <input type="radio" id="card" name="payment-method">
+              <label for="card">
+                <img src="../../images/card.svg" alt="kort"> Kort
+              </label>
+              <div class="input-box card-input">
+                <label for="card-number"></label>
+                <input type="text" id="card-number" name="card-number" placeholder="Ange kortnummer">
+              </div>
             </div>
-            <br><br>
-            <input type="checkbox" id="villkor">
-            <label for="villkor">Jag har läst och godkänt <a href="villkor.html">villkoren</a> som ändå ingen har läst</label><br><br><br><br>
 
-            <button id="regbtn" type="button">Registrera</button><br><br>
-            <p>Har du redan ett konto?</p>
-            <a href="login.html" id="loginbtn">Logga in</a>
+            <div class="payment-option">
+              <input type="radio" id="swish" name="payment-method">
+              <label for="swish">
+                <img src="../../images/swishicon.svg" alt="swish"> Swish
+              </label>
+              <div class="input-box swish-input">
+                <label for="swish-number"></label>
+                <input type="text" id="swish-number" name="swish-number" placeholder="Ange telefonnummer">
+              </div>
+            </div>
+          </div>
+          <br><br>
+          <input type="checkbox" id="villkor">
+          <label for="villkor">Jag har läst och godkänt <a href="villkor.html">villkoren</a> som ändå ingen har
+            läst</label><br><br><br><br>
+
+          <button id="regbtn" type="button">Registrera</button><br><br>
+          <p>Har du redan ett konto?</p>
+          <a href="login.html" id="loginbtn">Logga in</a>
         </form>
+      </div>
     </div>
-</div>
-  </body>
+</body>
+
 </html>
