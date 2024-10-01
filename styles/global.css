@@ -174,8 +174,7 @@ footer ul {
 }
 
 .navbar {
-    display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr 2fr auto auto auto;
+    display: flex;
     padding: 10px;
     margin-top: 10px;
     margin-left: 5px;
@@ -186,6 +185,7 @@ footer ul {
 }
 
 .navbar ul li.logo img {
+    display: flex;
     width: 300px;
     height: auto;
 }
@@ -195,12 +195,20 @@ footer ul {
 }
 
 .navbar ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
     list-style: none;
     display: flex;
 }
 .navbar ul li.search a {
-    padding: 0 10px;
- }
+    padding: 0 50px;
+    }
+
+.navbar ul li.search {
+    margin-left: auto;
+}
+
 .navbar ul li a {
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -211,6 +219,12 @@ footer ul {
 
 .navbar ul li .icon-search {
     max-width: 25px;
+}
+
+.navbar ul li .icon-search:hover {
+    max-width: 25px;
+    background-image: url("../images/searchiconpurple.svg");
+    
 }
 
 
@@ -226,8 +240,7 @@ footer ul {
 }
 
 .navbar ul li:not(.logo) a:hover {
-    background-color: rgb(165, 48, 161);
-    color: black;
+    color: rgb(165, 48, 161);
 }
 
 .icon {

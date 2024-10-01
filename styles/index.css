@@ -234,3 +234,48 @@
 .faq-container ul li.hidden:hover .question-header .icon-arrow-up {
     display: block;
 }
+
+.more-movies {
+    margin: 100px 0;
+}
+
+.more-movies ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.more-movies ul li {
+    position: relative;
+}
+
+.more-movies ul li .blurred-bg {
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    filter: blur(5px);
+    border-radius: 6px;
+}
+
+.more-movies ul li .inner-poster {
+    padding: 10px;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    
+}
+
+.more-movies ul li .inner-poster img {
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+
+.more-movies ul li .inner-poster .listing-type {
+    position: absolute;
+}
