@@ -112,7 +112,6 @@ label a {
 #loginbtn,
 #regbtn {
     width: 100%;
-    background-color: #512B81;
     padding: 15px;
     border: none;
     border-radius: 60px;
@@ -125,6 +124,13 @@ label a {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+}
+
+#loginbtn {
+    background-color: #35155D;
+}
+#regbtn {
+    background-color: #4477CE;
 }
 
 #loginbtn:hover,
@@ -182,4 +188,8 @@ input[type="radio"]:checked+label+.input-box {
     max-width: 85%;
     text-align: center;
     margin: 0 auto;
+}
+
+#harkonto {
+    text-align: center;
 }
