@@ -1,41 +1,25 @@
 @import "variables.css";
-:root {
-    --main-background-color: #19161c;
-    --theme-color: #35155D;
-    --theme-color-hover: #512B81;
-    --secondary-theme-color: #4477CE;
-    --secondary-theme-color-hover: #8CABFF;
-    --container-bg-color: #261f2c;
-    --secondary-container-bg-color: #2e2535;
-    --text-color: #E1D6EC;
-    --font-family: "Roboto", sans-serif;
-    --font-size: 16px;
-}
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
- 
-main {
-    font-family: var( --font-family);
-    font-size: var(--font-size);
-    color: var(  --theme-color);
+
+
+.main-container-1 {
     text-align: center;
     display: grid;
     grid-template-rows: auto auto;
-    width: 100vw;
+    width: 100%;
+    margin: 0 20px;
 }
+    
 
 .hero{
  background-image: url('../../images/r-images/her92.jpg');
- background-repeat: repeat;
- width: 100vw;
+ background-size: cover;
+ width: 100%;
  height: 100vh;
  display: grid;
  grid-template-columns: 1fr;
  place-items: center;
+ border-radius: 15px;
  }
 
  .hero-section h1 {
@@ -50,9 +34,10 @@ main {
     margin-top: 20px;
    grid-template-columns: 1fr;
     height: 300px;  
-    margin: 40px;
+    margin: 25px;
     align-self: center;
 }
+
 .about-us-title {
     display: grid;
     align-items: center;
@@ -66,10 +51,10 @@ main {
 
 .container {
     grid-template-columns: repeat(2 1fr);
-    margin: 30px; 
     gap: 100px 100px;
     font-size: 20px;
-    justify-self: center;
+    justify-self: normal;
+    margin: 20px 0;
 }
 
 .portfolio {
@@ -81,15 +66,19 @@ main {
 .portfolio-content{
     display: grid;
     grid-column: 1 / 2;
-   width: 500px;
+   width: 400px;
 }
 
 .portfolio-img{
     display: grid;
     grid-column: 2 / 3;
-}  
+} 
+
 .portfolio img {
     width: 100%;
+    margin-left: 10px;
+    grid-column: 2 / 3;
+    border-radius: 20px;
 }
 
 .skillz{
@@ -102,11 +91,12 @@ main {
 .skillz-img {
     display: grid;
     grid-column: 1 / 2;
-    width: 100%;
+    justify-items: start;
 }
 
 .skillz img {
     width: 50vw;
+    border-radius: 30px;
 }
 
 
@@ -149,10 +139,12 @@ main {
 .partner-img {
     display: grid;
     grid-column: 2 / 3;
+
 }
 
 .partner img {
     width: 50vw;
+    border-radius: 50PX;
 }
 
 .leader {
@@ -174,13 +166,11 @@ main {
 .leader-content{
     display: grid;
    grid-column: 1 / 2;
-   margin: 20px; 
+   margin: 0;
 }
 
 .contact-page {
-    display: grid;
-   margin: 20px;
-   padding: 20px; 
+    display: grid; 
    text-decoration: none;
 }
 
@@ -190,6 +180,8 @@ main {
 }
 .leader img {
     width: 50vw;
+    height: fit-content;
+    border-radius: 50PX;
 }
 
 .contact-page{
@@ -200,93 +192,17 @@ main {
     border-radius: 5px;
     background-color: var(--container-bg-color);
     transition: background-color 0.3s ease, color 0.3s ease;
+    justify-content: center;
 }
 
-.contact-page a{
-    text-decoration: none;
-}
+
+
 .contact-page:hover {
     background-color: var(--secondary-theme-color);
-    color: var(--secondary-container-bg-color)
+    color: var(--secondary-container-bg-color);
+    cursor: pointer;
+    transform: scale(1.3); 
 }
 
-@media (max-width: 767px) {
-    .container {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
 
-    .hero-section h1 {
-        font-size: 2.2rem;
-    }
-
-    .about-us-title {
-        font-size: 1.8rem;
-    }
-
-    .about-us-content {
-        font-size: 1rem;
-    }
-
-    .contact-page {
-        padding: 8px 16px;
-        font-size: 1rem;
-        width: 100%; 
-        text-align: center;
-    }
-}
-/* Tablet (min-width: 768px and max-width: 1023px) */
-
-@media (max-width: 767px) {
-    .container, .portfolio, .skillz, .partner, .leader {
-        grid-template-columns: 1fr;
-    }
-
-    .leader-img {
-        display: none;
-    }
-
-    .contact-page a {
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-
-    .hero-section h1 {
-        font-size: 2rem;
-    }
-
-    .about-us-content, .portfolio-content h1, .skillz-content p, .partner-content p, .leader-content p {
-        font-size: 1rem;
-    }
-
-    .portfolio img, .skillz img, .partner img, .leader img {
-        width: 100%;
-    }
-}
-
-/* Tablet (min-width: 768px and max-width: 1023px) */
-
-@media (min-width: 768px) and (max-width: 1023px) {
-
-    .container, .portfolio, .skillz, .partner, .leader {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-page a {
-        width: 50%;
-        margin: 0 auto;
-    }
-
-    .hero-section h1 {
-        font-size: 2.5rem;
-    }
-
-    .about-us-content, .portfolio-content h1, .skillz-content p, .partner-content p, .leader-content p {
-        font-size: 1.2rem;
-    }
-
-    .portfolio img, .skillz img, .partner img, .leader img {
-        width: 100%;
-    }
-}
+  
