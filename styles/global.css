@@ -25,7 +25,7 @@ body, html {
 
 button {
     background-color: var(--theme-color);
-    padding: 15px;
+    padding: 15px 30px;
     border: none;
     border-radius: 30px;
     font-family: var(--font-family);
@@ -34,6 +34,10 @@ button {
     color: #fff;
     cursor: pointer;
     transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: var(--theme-color-hover);
 }
 
 input[type="text"], input[type="password"] {
@@ -286,4 +290,12 @@ footer ul {
 
 .icon-arrow-up {
     background-image: url("../images/arrowup.svg");
+}
+
+.icon-arrow-left {
+    background-image: url("../images/arrowleft.svg");
+}
+
+.icon-arrow-right {
+    background-image: url("../images/arrowright.svg");
 }
