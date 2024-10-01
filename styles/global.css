@@ -316,11 +316,27 @@ footer ul {
     }
 
     .navbar ul li.logo img {
-        width: 200px;
+        width: 150px;
     }
 
 }
 
 .navbar ul li .icon-search {
     max-width: 35px;
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+
+    .navbar ul li.logo img {
+        width: 200px;
+    }
+
+    .navbar ul li:not(.mobile) {
+        display: none;
+    }
+
+    .navbar ul li.mobilemenu {
+        display: block;
+    }
+    
 }
