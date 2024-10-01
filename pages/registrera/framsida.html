@@ -10,81 +10,63 @@
   </head>
   <body> 
     <header class="header">
-        <div class="container">
-            <h1 class="caption">Skapa abonnemang nu och få 3 månader helt gratis.</h1>
-            <p>Gäller både för nya och befintliga användare. Streama dina serier och filmer i hög kvalité utan reklam och gömda kostnader. Säg up abonnemanget när du vill.</p>
-            
-            <div class="btns">
-                <a href="#" class="subscribe"><button>Ta del av erbjudandet</button></a>
-                <a href="#" class="read-more"><button>Läs mer</button></a>
-            </div>
-            
-            <div class="footnote">* Erbjudandet kan bara användas en gång per kund.</div>
-        </div>
+ 
     </header>
 
 <div class="main-container">
   <div class="reglogincontainer">
     <div id="wrapper">
-        <h1>Logga in</h1><br><br>     
-            <form>
-                <label for="username">Användarnamn :</label> <br><br>
-                <input type="text" id="username" name="användarnamn"><br><br>
-                <label for="pwd">Lösenord :</label><br><br>
-                <input type="password" id="pwd" name="pwd"><br><br><br>
-                <input type="submit" value="Logga in"><br><br>
-                <p>Har du inget konto? <a href="registrera.html" class="regbutton">Registrera</a> dig nu.</p>
-            </form>
+        <h1>Registrera nytt konto</h1><br><br>
+        <form>
+            <label for="fname">Förnamn :</label><br><br>
+            <input type="text" id="fname" name="fname"><br><br><br>
+
+            <label for="lname">Efternamn :</label><br><br>
+            <input type="text" id="lname" name="lname"><br><br><br>
+
+            <label for="email">Email adress :</label><br><br>
+            <input type="text" id="email" name="email"><br><br><br>
+
+            <label for="pword">Välj ett lösenord :</label><br><br>
+            <input type="password" id="pword" name="pword"><br><br><br>
+
+            <label for="pword">Upprepa lösenord :</label><br><br>
+            <input type="password" id="pword" name="pword"><br><br><br><br>
+
+            <h4>Välj betalningsmetod :</h4>
+            
+            <div class="payment-cont">
+                <div class="payment-option">
+                    <input type="radio" id="card" name="payment-method">
+                    <label for="card">
+                        <img src="../../images/card.svg" alt="kort"> Kort
+                    </label>
+                    <div class="input-box card-input">
+                        <label for="card-number"></label>
+                        <input type="text" id="card-number" name="card-number" placeholder="Ange kortnummer">
+                    </div>
+                </div>
+
+                <div class="payment-option">
+                    <input type="radio" id="swish" name="payment-method">
+                    <label for="swish">
+                        <img src="../../images/swishicon.svg" alt="swish"> Swish
+                    </label>
+                    <div class="input-box swish-input">
+                        <label for="swish-number"></label>
+                        <input type="text" id="swish-number" name="swish-number" placeholder="Ange telefonnummer">
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <input type="checkbox" id="villkor">
+            <label for="villkor">Jag har läst och godkänt <a href="villkor.html">villkoren</a> som ändå ingen har läst</label><br><br><br><br>
+
+            <button id="regbtn" type="button">Registrera</button><br><br>
+            <p>Har du redan ett konto?</p>
+            <a href="login.html" id="loginbtn">Logga in</a>
+        </form>
     </div>
 </div>
-</div>
-
-    <footer class="footercontainer">
-      <section class="footerlogo">
-       <div class="footerlogoimg">
-        <img src="../jensenflix/images/Ikea_logo.svg.png" alt="logo">
-       </div> 
-  
-      </section>
-      <section class="JensenFlix">JensenFlix
-        <ul>
-            <li><a href="index.html">Hem</a></li>
-            <li><a href="../jensenflix/filmsida/filmsida.html">Filmer</a></li>
-            <li><a href="../jensenflix/serier/serier.html">Serier</a></li>
-            <li><a href="../jensenflix/sport/sport.html">Sport</a></li>
-            <li>Link 5</li>
-  
-        </ul>
-      </section>
-      <section class="information">information
-        <ul>
-            <li>Link 1</li>
-            <li>Link 2</li>
-            <li>Link 3</li>
-            <li>Link 4</li>
-            <li>Link 5</li>
-  
-        </ul>
-      </section>
-      <section class="Omoss">Om oss
-        <ul>
-            <li>Link 1</li>
-            <li><a href="../jensenflix/kontakt/kontakt.html">Kontakt</a></li>
-            <li><a href="../jensenflix/omoss/omoss.html">Om oss</a></li>
-            <li>Link 4</li>
-            <li>Link 5</li>
-  
-        </ul>
-      </section>
-      <section class="följoss">följ oss
-        <ul class="socialamediaiconer">
-            <li><a href=""><div class="iconcontain"><img class="" src="../jensenflix/images/instagram.svg" alt="Instagram"></div></a></li>
-            <li><a href=""><div class="iconcontain"><img class="" src="../jensenflix/images/facebook.svg" alt="Facebook"></div></a></li>
-            <li><a href=""><div class="iconcontain"><img class="" src="../jensenflix/images/twitter.svg" alt="Twitter"></div></a></li>
-  
-        </ul>
-      </section>
-      <div class="legal">© 2024 JensenFlix Group Sweden AB (org.no: 9847502-0987). All rights reserved.</div>
-    </footer>
   </body>
 </html>
