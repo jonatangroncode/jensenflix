@@ -319,5 +319,9 @@ footer ul {
     .header .container .btns a {
         width: 100% !important;
     }
+
+    .main-container {
+        width: 90%;
+    }
 }
   
