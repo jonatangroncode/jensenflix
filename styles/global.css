@@ -23,7 +23,7 @@ body, html {
     box-sizing: border-box;
 }
 
-button {
+button, input[type="submit"] {
     background-color: var(--theme-color);
     padding: 15px 30px;
     border: none;
@@ -36,7 +36,7 @@ button {
     transition: all 0.2s ease;
 }
 
-button:hover {
+button:hover, input[type="submit"]:hover {
     background-color: var(--theme-color-hover);
 }
 
