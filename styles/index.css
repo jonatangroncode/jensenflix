@@ -53,8 +53,8 @@
 .prices {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 60px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 75px;
     margin: 100px 0;
 }
 
@@ -67,7 +67,7 @@
     height: fit-content;
 }
 
-.prices .plan:nth-child(3) {
+.prices .plan:nth-child(2) {
     transform: scale(1.1);
 }
 
@@ -233,4 +233,207 @@
 .faq-container ul li.hidden:hover p,
 .faq-container ul li.hidden:hover .question-header .icon-arrow-up {
     display: block;
+}
+
+.more-movies {
+    margin: 100px 0;
+    background-color: var(--container-bg-color);
+    padding: 20px 0;
+}
+
+.movies-container {
+    display: flex;
+    align-items: center;
+}
+
+.more-movies .list-controls {
+    padding: 0 75px;
+}
+
+.more-movies .see-more-link {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.more-movies ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 75%;
+    padding: 20px;
+    gap: 20px;
+}
+
+.more-movies ul a {
+    text-decoration: none;
+}
+
+.more-movies ul li {
+    position: relative;
+    background-size: 100%;
+    background-position: center;
+    height: 150px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    padding: 10px;
+}
+.more-movies ul li .listing-title {
+    margin-right: auto;
+    font-weight: bold;
+    text-shadow: 0 0 10px black;
+    max-width: 50%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #FFF;
+    transition: color 0.2s ease;
+}
+
+.more-movies ul li .listing-type {
+    position: absolute;
+    background-color: var(--secondary-theme-color);
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 3px 12px;
+    color: #FFF;
+    transition: background-color 0.2s ease;
+}
+
+.more-movies ul a li:hover .listing-title {
+    color: var(--secondary-theme-color-hover);
+}
+
+.more-movies ul a li:hover .listing-type {
+    background-color: var(--secondary-theme-color-hover);
+}
+
+.email-signup {
+    width: 75%;
+    margin: -50px auto 50px;
+    display: flex;
+    gap: 20px;
+}
+
+.email-signup input[type="text"] {
+    width: 75%;
+}
+
+.email-signup input[type="submit"] {
+    width: 25%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .main-container .prices {
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .main-container .prices .plan:nth-child(2) {
+        transform: scale(1);
+        grid-column: span 2;
+        grid-row: 1 / 2;
+    }
+
+    .main-container .trending-shows ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .main-container .member-offers ul {
+        grid-template-columns: repeat(2, 1fr);
+    }   
+
+    .more-movies .list-controls {
+        padding: 0 20px;
+    }
+
+    .more-movies .movies-container ul {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px 0;
+    }
+
+    .more-movies .movies-container ul > *:nth-child(n+3) {
+        display: none;
+    }
+
+    .email-signup {
+        flex-direction: column;
+    }
+
+    .email-signup input {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-container .prices {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .main-container .prices .plan:nth-child(2) {
+        transform: scale(1);
+    }
+
+    .main-container .prices .plan {
+        height: 100%;
+    }
+
+    .main-container .prices .plan > a {
+        margin-top: auto;
+    }
+
+    .main-container .trending-shows ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .main-container .member-offers ul {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }   
+
+    .more-movies .list-controls {
+        padding: 0 20px;
+    }
+
+    .more-movies .movies-container ul {
+        grid-template-columns: 1fr;
+        padding: 20px 0;
+    }
+
+    .more-movies .movies-container ul > *:nth-child(n+2) {
+        display: none;
+    }
+
+    .email-signup {
+        flex-direction: column;
+    }
+
+    .email-signup input {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .header {
+        height: fit-content;
+    }
+
+    .more-movies .list-controls {
+        padding: 0;
+    }
+
+    .more-movies .see-more-link {
+        margin: 0 20px;
+    }
 }
