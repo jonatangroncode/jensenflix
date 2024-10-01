@@ -227,6 +227,9 @@ footer ul {
     
 }
 
+.navbar ul li.mobilemenu {
+    display: none;
+}
 
 .navbar ul li {
     height: 100%;
@@ -286,4 +289,30 @@ footer ul {
 
 .icon-arrow-up {
     background-image: url("../images/arrowup.svg");
+}
+
+.icon-hamburger {
+    background-image: url("../images/menu.svg");
+}
+
+@media (max-width: 768px) {
+    .navbar ul li.mobilemenu {
+        display: block;
+    }
+
+    .navbar ul li:not(.mobile) {
+        display: none;
+    }
+    .navbar li.search {
+        margin-left: auto;
+    }
+    
+    li.search a {
+        padding: 0;
+    }
+
+    .navbar ul li a {
+        padding: 0;
+    }
+
 }
