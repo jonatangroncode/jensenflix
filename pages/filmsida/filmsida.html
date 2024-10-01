@@ -1,11 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../styles/global.css" />
+    <link rel="stylesheet" href="../../styles/_variables.css" />
+  </head>
+  <body>
+    <div class="filtercontainer">
+      <h2>Filmer</h2>
+      <div class="selectioncontainer">
+        <div class="selection">
+          <label for="genre">Genres</label>
+          <select id="genre">
+            <option value="">Alla</option>
+            <option value="action">Action</option>
+            <option value="comedy">Komedi</option>
+            <option value="drama">Drama</option>
+            <option value="horror">Horror</option>
+          </select>
+        </div>
+
+        <div class="selection">
+          <label for="year">År</label>
+          <select id="year">
+            <option value="">Alla</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+          </select>
+        </div>
+
+        <div class="selection">
+          <label for="sortering">Sortering</label>
+          <select id="Sortering">
+            <option value="">Alla</option>
+            <option value="A-Ö">A-Ö</option>
+            <option value="Ö-A">Ö-A</option>
+            <option value="Senaste">Senaste</option>
+            <option value="Äldsta">Äldsta</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="contentcontainer">
+      <aside class="sidebar">
+        <h3>Skådespelare</h3>
+
+        <div class="actorcontainer">
+          <div class="actorimg">
+            <img
+              src="../../images/skådisar/cillianmurphy.png"
+              alt="Cillian Murphy"
+            />
+          </div>
+          <h4 class="actorname">cillian Murphy</h4>
+          <div class="actorimg">
+            <img
+              src="../../images/skådisar/cillianmurphy.png"
+              alt="Cillian Murphy"
+            />
+          </div>
+          <h4 class="actorname">cillian Murphy</h4>
+          <div class="actorimg">
+            <img
+              src="../../images/skådisar/cillianmurphy.png"
+              alt="Cillian Murphy"
+            />
+          </div>
+          <h4 class="actorname">cillian Murphy</h4>
+        </div>
+
+        <div class="actorcontainer2">
+          <div class="actorimg">
+            <img
+              src="../../images/skådisar/cillianmurphy.png"
+              alt="Cillian Murphy"
+            />
+          </div>
+          <h4 class="actorname">cillian Murphy</h4>
+          <div class="actorimg">
+            <img src="../../images/skådisar/mattdamond.png" alt="Matt Damond" />
+          </div>
+          <h4 class="actorname">Matt Damond</h4>
+        </div>
+      </aside>
+
+      <div class="hr"></div>
+
+      <div class="gridandpagination">
+        <div class="moviegrid">
+          <a href="https://www.youtube.com/watch?v=YN6N3jIu4ds&autoplay=1&fullscreen=1" target="_blank" rel="noopener noreferrer">
+            <div class="film">
+              <div class="overlay">
+                <div class="starcontainer">
+                  <img src="../../images/star.svg" />
+                  <img src="../../images/star.svg" />
+                  <img src="../../images/star.svg" />
+                  <img src="../../images/star.svg" />
+                  <img src="../../images/star.svg" />
+                  <img src="../../images/star.svg" />
+                </div>
+                <div class="rating">6.5/10</div>
+              </div>
+              <img
+                src="../../images/moviepostersgrid/blackpanter.png"
+                alt="Film 1"
+              />
+              <h2>black panter</h2>
+            </div>
+          </a>
+          <a href="https://www.imdb.com/">
+            <div id="film2" class="film">
+              <div class="overlay">
+                <div class="starcontainer">
+                  <img src="../../images/star.svg" />
+                  <img src="../../images/star.svg" />
+                  <img src="../../images/star.svg" />
+                  <img src="../../images/star.svg" />
+                  <img src="../../images/star.svg" />
+                  <img src="../../images/star.svg" />
+                  <img src="../../images/star.svg" />
+                  <img src="../../images/star.svg" />
+                </div>
+                <div class="rating">8.3/10</div>
+              </div>
+              <img
+                src="../../images/moviepostersgrid/openheimer.png"
+                alt="Film 2"
+              />
+              <h2>Openheimer</h2>
+            </div>
+          </a>
+          <a href="https://www.imdb.com/">
+            <div class="film">
+              <img
+                src="../../images/moviepostersgrid/civilwar.png"
+                alt="Film 2"
+              />
+              <h2>Film 2 Titel</h2>
+            </div>
+          </a>
+          <a href="https://www.imdb.com/">
+            <div class="film">
+              <img src="../../images/moviepostersgrid/dune2.png" alt="Film 2" />
+              <h2>Film 2 Titel</h2>
+            </div>
+          </a>
+          <a href="https://www.imdb.com/">
+            <div class="film">
+              <img src="../../images/moviepostersgrid/joker.png" alt="Film 2" />
+              <h2>Film 2 Titel</h2>
+            </div>
+          </a>
+          <a href="https://www.imdb.com/">
+            <div class="film">
+              <img src="../../images/moviepostersgrid/joker.png" alt="Film 2" />
+              <h2>Film 2 Titel</h2>
+            </div>
+          </a>
+          <a href="https://www.imdb.com/">
+            <div class="film">
+              <img src="../../images/moviepostersgrid/joker.png" alt="Film 2" />
+              <h2>Film 2 Titel</h2>
+            </div>
+          </a>
+          <a href="https://www.imdb.com/">
+            <div class="film">
+              <img src="../../images/moviepostersgrid/joker.png" alt="Film 2" />
+              <h2>Film 2 Titel</h2>
+            </div>
+          </a>
+          <a href="https://www.imdb.com/">
+            <div class="film">
+              <img src="../../images/moviepostersgrid/joker.png" alt="Film 2" />
+              <h2>Film 2 Titel</h2>
+            </div>
+          </a>
+          <a href="https://www.imdb.com/">
+            <div class="film">
+              <img src="../../images/moviepostersgrid/joker.png" alt="Film 2" />
+              <h2>Film 2 Titel</h2>
+            </div>
+          </a>
+          <a href="https://www.imdb.com/">
+            <div class="film">
+              <img src="../../images/moviepostersgrid/joker.png" alt="Film 2" />
+              <h2>Film 2 Titel</h2>
+            </div>
+          </a>
+          <a href="https://www.imdb.com/">
+            <div class="film">
+              <img src="../../images/moviepostersgrid/joker.png" alt="Film 2" />
+              <h2>Film 2 Titel</h2>
+            </div>
+          </a>
+          <a href="https://www.imdb.com/">
+            <div class="film">
+              <img src="../../images/moviepostersgrid/joker.png" alt="Film 2" />
+              <h2>Film 2 Titel</h2>
+            </div>
+          </a>
+          <a href="https://www.imdb.com/">
+            <div class="film">
+              <img src="../../images/moviepostersgrid/joker.png" alt="Film 2" />
+              <h2>Film 2 Titel</h2>
+            </div>
+          </a>
+
+          
+       
+      </div> <div class="paginationobj"> 
+          <button class="prev">Prev</button>
+          <div class="pagination">
+            <span class="active">1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+          </div>
+          <div class="pagination">
+           
+            <button class="next">Next</button>
     
-</body>
+        </div>
+    </div>
+  </body>
 </html>

@@ -1,8 +1,12 @@
 :root {
-    --main-background-color: #151515;
-    --theme-color: #512B81;
-    --secondary-theme-color: #101010;
-    --text-color: #F7EBFF;
+    --main-background-color: #19161c;
+    --theme-color: #35155D;
+    --theme-color-hover: #512B81;
+    --secondary-theme-color: #4477CE;
+    --secondary-theme-color-hover: #8CABFF;
+    --container-bg-color: #261f2c;
+    --secondary-container-bg-color: #2e2535;
+    --text-color: #F8F0FF;
     --font-family: "Roboto", sans-serif;
     --font-size: 16px;
 }

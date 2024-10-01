@@ -1,0 +1,120 @@
+@import "variables.css";
+:root {
+    --main-background-color: #19161c;
+    --theme-color: #35155D;
+    --theme-color-hover: #512B81;
+    --secondary-theme-color: #4477CE;
+    --secondary-theme-color-hover: #8CABFF;
+    --container-bg-color: #261f2c;
+    --secondary-container-bg-color: #2e2535;
+    --text-color: #E1D6EC;
+    --font-family: "Roboto", sans-serif;
+    --font-size: 16px;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+main {
+
+    font-family: var( --font-family);
+    font-size: var(--font-size);
+    line-height: 1.5;
+    margin: 20px;
+
+ .container{
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-flow: row wrap;
+    border-radius: 2%;
+ }
+
+}
+.contact-header {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 50px;
+  color: var(--theme-color);
+}
+
+.contact-card-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 20px;
+    flex: 1 1 30%;
+}
+.contact-card{ 
+ background-color:#ebe5e5;
+ border-radius: 8%;
+}
+
+.contact-card:hover {
+    border-color: var(--secondary-theme-color);  
+    color: var(--secondary-theme-color);  
+    box-shadow: 0 4px 12px var(--secondary-theme-color-hover);
+}
+
+.pic img{
+    width: 200px;
+    height: 200px;
+    padding: 20px 0;
+    border-radius: 50%;
+    border: 1px solid;
+    background-color: var(--main-background-color);
+}
+
+.location-container {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 1 50%;
+   justify-content: space-evenly;
+}
+
+.location-img {
+    width: 400px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10%;
+    background-color: #ebe5e5;
+}
+
+.location-container h2 {
+    display:block;
+    color: var(--theme-color);
+    margin-top: 20px;
+    padding: 10px;
+     
+}
+
+
+.location-info {
+    background-color: #ebe5e5;
+    border-radius: 10%;
+    margin: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+
+
+ul li {
+    margin: 1em;
+    display: flex;
+    align-items: center;
+}
+li img {
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
+    border-color: var(--secondary-theme-color);    
+    box-shadow: 0 4px 12px var(--secondary-theme-color-hover)
+}

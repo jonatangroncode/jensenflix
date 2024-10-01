@@ -16,10 +16,35 @@ body, html {
     font-family: var(--font-family);
     font-size: var(--font-size);
     color: var(--text-color);
+    line-height: 1.5;
 }
 
 * {
     box-sizing: border-box;
+}
+
+button {
+    background-color: var(--theme-color);
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: normal;
+    color: #fff;
+    background-color: var(--secondary-container-bg-color);
 }
 
 .main-container {
@@ -27,28 +52,23 @@ body, html {
     margin: 50px auto;
 }
 
-.main-container h1 {
-    color: #FFF;
-}
-
 .header {
     background-image: 
         linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, var(--main-background-color) 100%), 
         url("../images/headerbg.png"); 
-    background-position: center;
+    background-position: bottom;
     background-size: 100%;
     width: 100%;
-    height: 500px;
+    height: 600px;
     color: #FFF;
+    display: grid;
+    grid-template-rows: auto 1fr;
 }
 
 .header .container {
     width: 50%;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
+    align-self: center;
 }
 
 .header .container .caption {
@@ -66,26 +86,12 @@ body, html {
     width: 75%;
 }
 
-.header .container .btns button {
-    background-color: var(--secondary-theme-color);
-    padding: 15px;
-    border: none;
-    border-radius: 60px;
-    font-family: var(--font-family);
-    font-size: var(--font-size);
-    font-weight: bold;
-    color: #fff;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
 .header .container .btns .subscribe button {
     width: 100%;
-    background-color: var(--theme-color);
 }
 
 .header .container .btns .subscribe button:hover {
-    filter: saturate(1.25);
+    background-color: var(--theme-color-hover);
 }
 
 .header .container .btns .read-more {
@@ -93,13 +99,12 @@ body, html {
 }
 
 .header .container .btns .read-more button {
-    color: silver;
     width: 100%;
+    background-color: var(--secondary-theme-color);
 }
 
 .header .container .btns .read-more button:hover {
-    background-color: #202020;
-    color: #FFF;
+    background-color: var(--secondary-theme-color-hover);
 }
 
 .header .container .footnote {
@@ -257,4 +262,28 @@ footer ul {
 
 .icon-search {
     background-image: url("../images/searchicon.svg");
+}
+
+.icon-tv {
+    background-image: url("../images/tv.svg");
+}
+
+.icon-household {
+    background-image: url("../images/household.svg");
+}
+
+.icon-offline {
+    background-image: url("../images/offline.svg");
+}
+
+.icon-profiles {
+    background-image: url("../images/profiles.svg");
+}
+
+.icon-arrow-down {
+    background-image: url("../images/arrowdown.svg");
+}
+
+.icon-arrow-up {
+    background-image: url("../images/arrowup.svg");
 }
