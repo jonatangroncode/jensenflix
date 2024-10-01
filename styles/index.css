@@ -234,3 +234,22 @@
 .faq-container ul li.hidden:hover .question-header .icon-arrow-up {
     display: block;
 }
+
+.more-movies {
+    margin: 100px 0;
+}
+
+.more-movies ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.more-movies ul li {
+}
+
+.more-movies ul li img {
+    
+}
