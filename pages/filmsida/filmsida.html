@@ -4,44 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="../../styles/global.css" />
     <link rel="stylesheet" href="../../styles/_variables.css" />
   </head>
   <body>
+
+    
     <div class="filtercontainer">
       <h2>Filmer</h2>
       <div class="selectioncontainer">
         <div class="selection">
-          <label for="genre">Genres</label>
-          <select id="genre">
-            <option value="">Alla</option>
+          <div class="select-wrapper">
+              <select id="genre">
+            <option value="" selected disabled >Genre</option>
+            <option value="action">Alla</option>
             <option value="action">Action</option>
             <option value="comedy">Komedi</option>
             <option value="drama">Drama</option>
             <option value="horror">Horror</option>
-          </select>
+          </select>  
+          </div>
+      
         </div>
 
         <div class="selection">
-          <label for="year">År</label>
+          <div class="select-wrapper">
           <select id="year">
+            <option value="" selected disabled >År</option>
+
             <option value="">Alla</option>
             <option value="2021">2021</option>
             <option value="2020">2020</option>
             <option value="2019">2019</option>
           </select>
+          </div>
         </div>
 
         <div class="selection">
-          <label for="sortering">Sortering</label>
+          <div class="select-wrapper">
           <select id="Sortering">
-            <option value="">Alla</option>
+            <option value="" selected disabled>Sortering</option>
+
+            <option value="" >Alla</option>
             <option value="A-Ö">A-Ö</option>
             <option value="Ö-A">Ö-A</option>
             <option value="Senaste">Senaste</option>
             <option value="Äldsta">Äldsta</option>
           </select>
+          </div>
         </div>
       </div>
     </div>
@@ -225,7 +236,7 @@
           <div class="pagination">
            
             <button class="next">Next</button>
-    
+          </div>
         </div>
     </div>
 
@@ -234,74 +245,73 @@
     <footer class="footercontainer">
       <section class="footerlogo">
         <div class="footerlogoimg">
-          <img src="../../jensenflix/images/logo.png" alt="logo" />
+         <a href="../../index.html"> <img src="../../images/logo.png" alt="logo" /></a>
         </div>
       </section>
 
       <section class="JensenFlix">
-        JensenFlix
+        <h3>JensenFlix</h3>
         <ul>
-          <li><a href="index.html">Hem</a></li>
+          <li><a href="../../index.html">Hem</a></li>
           <li>
-            <a href="../jensenflix/pages/filmsida/filmsida.html">Filmer</a>
+            <a href="../filmsida/filmsida.html">Filmer</a>
           </li>
           <li><a href="../jensenflix/serier/serier.html">Serier</a></li>
           <li><a href="../jensenflix/sport/sport.html">Sport</a></li>
-          <li>Link 5</li>
         </ul>
       </section>
 
       <section class="information">
-        Information
+        <h3> Information </h3>
         <ul>
-          <li>Link 1</li>
-          <li>Link 2</li>
-          <li>Link 3</li>
-          <li>Link 4</li>
-          <li>Link 5</li>
+          <li>Kundservice</li>
+          <li>Plattformar</li>
+          <li>Villkor</li>
+          <li>Dataskydd</li>
+          <li>Cookies</li>
         </ul>
       </section>
 
       <section class="Omoss">
-        Om oss
+        <h3>Om oss</h3>
         <ul>
-          <li>Link 1</li>
-          <li><a href="../jensenflix/kontakt/kontakt.html">Kontakt</a></li>
-          <li><a href="../jensenflix/omoss/omoss.html">Om oss</a></li>
-          <li>Link 4</li>
-          <li>Link 5</li>
+          <li><a href="../../pages/kontakt/kontakt.html">Kontakt</a></li>
+          <li><a href="../../pages/omoss/omoss.html">Om oss</a></li>
+          <li>Press</li>
+          <li>Nyheter</li>
+          <li>Jobb</li>
         </ul>
       </section>
 
       <section class="följoss">
-        Följ oss
+        <h3>Följ oss</h3>
         <ul class="socialamediaiconer">
           <li>
-            <a href=""
+            <a href="https://www.instagram.com/"
               ><div class="iconcontain">
                 <img
                   class=""
-                  src="../jensenflix/images/instagram.svg"
+                  src="../../images/socialamediericoner/instagram.svg"
                   alt="Instagram"
                 /></div
             ></a>
           </li>
           <li>
-            <a href=""
+            <a href="https://www.facebook.com/?locale=sv_SE"
               ><div class="iconcontain">
                 <img
                   class=""
-                  src="../jensenflix/images/facebook.svg"
+                  src="../../images/socialamediericoner/facebook.svg"
                   alt="Facebook"
                 /></div
             ></a>
           </li>
           <li>
-            <a href=""
+            <a href="https://x.com/?lang=sv"
               ><div class="iconcontain">
                 <img
                   class=""
-                  src="../jensenflix/images/twitter.svg"
+                  src="../../images/socialamediericoner/twitter.svg"
                   alt="Twitter"
                 /></div
             ></a>
@@ -309,9 +319,9 @@
         </ul>
       </section>
 
-      <div class="legal">
-        © 2024 JensenFlix Group Sweden AB (org.no: 9847502-0987). All rights
-        reserved.
+      <div class="legal"><a href="https://github.com/jonatangroncode/jensenflix"> © 2024 JensenFlix Group Sweden AB (org.no: 9847502-0987). All rights
+        reserved.</a>
+        
       </div>
     </footer>
   </body>
