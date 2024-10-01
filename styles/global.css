@@ -299,3 +299,25 @@ footer ul {
 .icon-arrow-right {
     background-image: url("../images/arrowright.svg");
 }
+
+@media (max-width: 768px) {
+    .header .container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .header .container .caption, 
+    .header .container p,
+    .header .container .footnote {
+        text-align: center;
+    }
+
+    .header .container .btns {
+        flex-wrap: wrap;
+    }
+
+    .header .container .btns a {
+        width: 100% !important;
+    }
+}
+  
