@@ -144,7 +144,7 @@ label a {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 .payment-option {

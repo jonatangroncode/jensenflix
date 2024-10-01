@@ -315,4 +315,12 @@ footer ul {
         padding: 0;
     }
 
+    .navbar ul li.logo img {
+        width: 200px;
+    }
+
+}
+
+.navbar ul li .icon-search {
+    max-width: 35px;
 }
