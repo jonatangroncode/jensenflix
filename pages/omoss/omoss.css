@@ -1,102 +1,89 @@
 @import "variables.css";
-:root {
-    --main-background-color: #19161c;
-    --theme-color: #35155D;
-    --theme-color-hover: #512B81;
-    --secondary-theme-color: #4477CE;
-    --secondary-theme-color-hover: #8CABFF;
-    --container-bg-color: #261f2c;
-    --secondary-container-bg-color: #2e2535;
-    --text-color: #E1D6EC;
-    --font-family: "Roboto", sans-serif;
-    --font-size: 16px;
-}
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
- 
-main {
-    font-family: var( --font-family);
-    font-size: var(--font-size);
-    color: var(--text-color);
+
+
+.main-container-1 {
     text-align: center;
     display: grid;
     grid-template-rows: auto auto;
-    width: 100vw;
-    color: var(  --theme-color);
+    width: 100%;
+    margin: 0 20px;
 }
+    
+
 .hero{
- background-image: url('../../images/r-images/hero.jpg');
- background-repeat: no-repeat;
- width: 100vw;
+ background-image: url('../../images/r-images/her92.jpg');
+ background-size: cover;
+ width: 100%;
  height: 100vh;
  display: grid;
  grid-template-columns: 1fr;
  place-items: center;
- margin-top: 30px;
+ border-radius: 15px;
  }
 
  .hero-section h1 {
     font-size: 3rem;
     color: var(--text-color);
-    background-color: var(--theme-color-hover);
+    background-color: var(--secondary-container-bg-color);
     padding: 1rem 2rem;
     border-radius: 8px;
 }
  .about-us{
     display: grid;
     margin-top: 20px;
-    padding-top: 20px;
+   grid-template-columns: 1fr;
     height: 300px;  
-    row-gap: 0;
+    margin: 25px;
+    align-self: center;
 }
+
 .about-us-title {
-    place-items: center;
     display: grid;
+    align-items: center;
     font-size: 2em;
     
 }
 .about-us-content {
-    display: grid;
     font-size:25px;
     font-weight: 100;
 }
 
 .container {
     grid-template-columns: repeat(2 1fr);
-    grid-template-rows: repeat(4 1fr );
-    margin: 30px; 
-    gap: 100px 20px;
-    
-    font-size: 20px; 
+    gap: 100px 100px;
+    font-size: 20px;
+    justify-self: normal;
+    margin: 20px 0;
 }
-
 
 .portfolio {
     display: grid;
-   row-gap: 50px;
+   gap: 50px;
    place-items: center; 
 } 
 
 .portfolio-content{
     display: grid;
     grid-column: 1 / 2;
-   width: 500px;
+   width: 400px;
 }
 
 .portfolio-img{
     display: grid;
     grid-column: 2 / 3;
-}  
+} 
+
 .portfolio img {
-    width: 50vw;
+    width: 100%;
+    margin-left: 10px;
+    grid-column: 2 / 3;
+    border-radius: 20px;
 }
 
 .skillz{
     display: grid;
+    gap: 50px;
     margin: 100px 0; 
     place-items: center;
 } 
@@ -104,7 +91,12 @@ main {
 .skillz-img {
     display: grid;
     grid-column: 1 / 2;
+    justify-items: start;
+}
+
+.skillz img {
     width: 50vw;
+    border-radius: 30px;
 }
 
 
@@ -112,6 +104,7 @@ main {
    display: grid;
    grid-column: 2 / 3;
     margin-top: 5%; 
+    line-height: 1.6;
 }
 
 .partner {
@@ -119,39 +112,97 @@ main {
     margin: 100px 0;
 }
 
-.partner-content{
+
+
+.partner {
+    display: grid;
+    gap: 50px;
+    margin: 100px 0; 
+}
+
+.partner-content-wrapper {
+    align-self: center;
+}
+
+.partner-content-wrapper h2 {
     display: grid;
     grid-column: 1 / 2;
+    margin: 20px;
+}
 
+.partner-content{
+    display: grid;
+   grid-column: 1 / 2;
+   margin: 20px; 
 }
 
 .partner-img {
     display: grid;
     grid-column: 2 / 3;
+
 }
 
-.partner-img img {
-width: 50vw;
-height: 500px;
+.partner img {
+    width: 50vw;
+    border-radius: 50PX;
 }
 
 .leader {
     display: grid;
-    margin: 100px 0; 
+    margin: 100px 0;
+    gap: 50px; 
 }
 
+.leader-content-wrapper {
+    align-self: center;
+}
+
+.leader-content-wrapper h2 {
+    display: grid;
+    grid-column: 1 / 2;
+    margin: 20px;
+}
 
 .leader-content{
     display: grid;
    grid-column: 1 / 2;
-   place-items: center; 
+   margin: 0;
+}
+
+.contact-page {
+    display: grid; 
+   text-decoration: none;
 }
 
 .leader-img {
     display: grid;
     grid-column: 2 / 3;
-    display: grid;
-    width: 50%;
+}
+.leader img {
+    width: 50vw;
+    height: fit-content;
+    border-radius: 50PX;
+}
+
+.contact-page{
+    display: block;
+    margin-top: 100px;
+    color: var(--text-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: var(--container-bg-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    justify-content: center;
 }
 
 
+
+.contact-page:hover {
+    background-color: var(--secondary-theme-color);
+    color: var(--secondary-container-bg-color);
+    cursor: pointer;
+    transform: scale(1.3); 
+}
+
+
+  
