@@ -65,7 +65,8 @@ input[type="text"], input[type="password"] {
     ),
     url("../images/headerbg.png");
   background-position: bottom;
-  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   height: 600px;
   color: #fff;
