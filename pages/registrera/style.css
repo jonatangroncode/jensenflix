@@ -8,8 +8,8 @@
 .reglogincontainer,
 .villkor-container {
     margin: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 10%;
+    margin-bottom: 10%;
     padding: 20px;
     max-width: 520px;
     max-height: auto;
@@ -112,7 +112,6 @@ label a {
 #loginbtn,
 #regbtn {
     width: 100%;
-    background-color: #512B81;
     padding: 15px;
     border: none;
     border-radius: 60px;
@@ -127,6 +126,13 @@ label a {
     display: inline-block;
 }
 
+#loginbtn {
+    background-color: #35155D;
+}
+#regbtn {
+    background-color: #4477CE;
+}
+
 #loginbtn:hover,
 #regbtn:hover {
     filter: saturate(1.25);
@@ -138,7 +144,7 @@ label a {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 .payment-option {
@@ -183,3 +189,20 @@ input[type="radio"]:checked+label+.input-box {
     text-align: center;
     margin: 0 auto;
 }
+
+#harkonto {
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+
+.regbutton, input[type="submit"] {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+}
+
+
+
