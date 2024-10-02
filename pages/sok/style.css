@@ -1,0 +1,50 @@
+.search-container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.search-container .input-container {
+    width: 100%;
+    position: relative;
+}
+
+.search-container .input-container input {
+    width: 100%;
+}
+
+.search-container .input-container .search-icon {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    pointer-events: none;
+}
+
+.search-container .input-container .search-icon .icon {
+    width: 25px;
+    height: 25px;
+}
+
+.search-container .search-filter-container {
+    display: flex;
+    margin: 25px 0;
+    align-items: center;
+}
+
+.search-container .search-filter-container > span {
+    font-weight: bold;
+    color: #FFF;
+}
+
+.search-container .search-filter-container ul {
+    list-style-type: none;
+    margin: 0 20px;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.search-container .search-filter-container ul li {
+    background-color: var(--container-bg-color);
+    border-radius: 6px;
+    padding: 5px 30px;
+}
