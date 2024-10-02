@@ -78,6 +78,10 @@
     font-size: var(--font-size);
 }
 
+.search-container .search-filter-container ul li select option {
+    color: black;
+}
+
 .search-container .search-result-amount {
     font-weight: bold;
     color: #FFF;
@@ -100,6 +104,8 @@
     height: 300px;
     position: relative;
     cursor: pointer;
+    width: fit-content;
+    place-self: center;
 }
 
 .search-container .search-results ul li:hover .movie-title {
@@ -108,7 +114,7 @@
 }
 
 .search-container .search-results ul li img {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     border-radius: 6px;
     object-fit: cover;
@@ -156,4 +162,89 @@
     font-weight: bold;
     max-width: 75%;
     text-align: center;
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+    .search-container .search-results ul {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media (min-width: 960px) and (max-width: 1200px) {
+    .search-container .search-results ul {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+    .search-container .search-results ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .search-container .search-filter-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-container .search-filter-container ul {
+        margin: 20px 0 0 0;
+        flex-wrap: wrap;
+    }
+
+    .search-container .search-filter-container ul li.sort {
+        flex-basis: 100%;
+        width: auto;
+        padding: 5px 10px;
+    }
+
+    .search-container .search-filter-container ul li select {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-container .search-results ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .search-container .search-filter-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-container .search-filter-container ul {
+        margin: 20px 0 0 0;
+        flex-direction: column;
+    }
+
+    .search-container .search-filter-container ul li {
+        padding: 5px 0;
+        text-align: center;
+    }
+
+    .search-container .search-filter-container ul li.sort {
+        width: 100%;
+    }
+
+    .search-container .search-filter-container ul li select {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .search-container .search-result-amount {
+        text-align: center;
+    }
+
+    .search-container .input-container .search-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 380px) {
+    .search-container .search-results ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
