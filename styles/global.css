@@ -181,6 +181,10 @@ input[type="text"], input[type="password"] {
   color: rgb(165, 48, 161);
 }
 
+.navbar ul li .icon-search {
+  max-width: 35px;
+}
+
 .icon {
   height: 55px;
   width: 55px;
@@ -474,9 +478,7 @@ footer ul li a:hover {
       width: 150px;
   }
 }
-.navbar ul li .icon-search {
-  max-width: 35px;
-}
+
 @media (min-width: 768px) and (max-width: 960px) {
   .navbar ul li.logo img {
       width: 200px;
