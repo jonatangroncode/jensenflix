@@ -145,9 +145,7 @@ input[type="text"], input[type="password"] {
   list-style: none;
   display: flex;
 }
-.navbar ul li.search a {
-  padding: 0 50px;
-  }
+
 .navbar ul li.search {
   margin-left: auto;
 }
@@ -159,15 +157,18 @@ input[type="text"], input[type="password"] {
   display: block;
 }
 .navbar ul li .icon-search {
-  max-width: 25px;
+  max-width: 30px;
+  max-height: 30px;
 }
 .navbar ul li .icon-search:hover {
-  max-width: 25px;
   background-image: url("../images/searchiconpurple.svg");
   
 }
 .navbar ul li.mobilemenu {
   display: none;
+}
+.navbar ul li.mobilemenu .icon {
+  max-width: 40px;
 }
 .navbar ul li {
   height: 100%;
@@ -179,13 +180,8 @@ input[type="text"], input[type="password"] {
   margin-left: 20px;
 }
 .navbar ul li:not(.logo) a:hover {
-  color: rgb(165, 48, 161);
+  color: var(--secondary-theme-color);
 }
-
-.navbar ul li .icon-search {
-  max-width: 35px;
-}
-
 .icon {
   height: 55px;
   width: 55px;
