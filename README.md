@@ -151,9 +151,9 @@ Sökrutan som man skriver i för att söka är stor och har även en sök ikon l
 #### Filtrering och Sortering
 Filteringen och sortering är designat på ett sätt som gör det enkelt för användaren att förstå vad som händer, genom att ändra bakgrundsfärgen på knapparna man trycker på när man vill filtrera något.
 
-![Sök Desktop Skiss](images/sokskiss/sokdesktop.png)
-![Sök Tablet Skiss](images/sokskiss/soktablet.png)
-![Sök Mobile Skiss](images/sokskiss/sokmobile.png)
+![Sök Desktop Skiss](images/mockskissar/sokskiss/sokdesktop.png)
+![Sök Tablet Skiss](images/mockskissar/sokskiss/soktablet.png)
+![Sök Mobile Skiss](images/mockskissar/sokskiss/sokmobile.png)
 
 
 
