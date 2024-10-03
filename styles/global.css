@@ -65,7 +65,8 @@ input[type="text"], input[type="password"] {
     ),
     url("../images/headerbg.png");
   background-position: bottom;
-  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   height: 600px;
   color: #fff;
@@ -121,42 +122,33 @@ input[type="text"], input[type="password"] {
 }
 
 .navbar {
-    display: flex;
-    padding: 10px;
-    margin-top: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
-    border-radius: 10px;
-    max-height: 100px;
-
+  display: flex;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 10px;
+  max-height: 100px;
 }
-
 .navbar ul li.logo img {
-    display: flex;
-    width: 300px;
-    height: auto;
+  display: flex;
+  width: 300px;
+  height: auto;
 }
-
 .logo {
   align-self: center;
 }
-
 .navbar ul {
-
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    list-style: none;
-    display: flex;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  list-style: none;
+  display: flex;
 }
-.navbar ul li.search a {
-    padding: 0 50px;
-    }
 
 .navbar ul li.search {
-    margin-left: auto;
+  margin-left: auto;
 }
-
 .navbar ul li a {
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -164,33 +156,32 @@ input[type="text"], input[type="password"] {
   padding: 0 20px;
   display: block;
 }
-
 .navbar ul li .icon-search {
-  max-width: 25px;
+  max-width: 30px;
+  max-height: 30px;
 }
-
-
 .navbar ul li .icon-search:hover {
-    max-width: 25px;
-    background-image: url("../images/searchiconpurple.svg");
-    
+  background-image: url("../images/searchiconpurple.svg");
+  
 }
-
+.navbar ul li.mobilemenu {
+  display: none;
+}
+.navbar ul li.mobilemenu .icon {
+  max-width: 40px;
+}
 .navbar ul li {
   height: 100%;
   justify-content: center;
   display: flex;
   align-items: center;
 }
-
 .navbar ul li:last-child a {
   margin-left: 20px;
 }
-
 .navbar ul li:not(.logo) a:hover {
-    color: rgb(165, 48, 161);
+  color: var(--secondary-theme-color);
 }
-
 .icon {
   height: 55px;
   width: 55px;
@@ -244,6 +235,10 @@ input[type="text"], input[type="password"] {
     background-image: url("../images/arrowright.svg");
 }
 
+.icon-hamburger {
+  background-image: url("../images/menu.svg");
+}
+
 .footercontainer {
   display: grid;
   color: var(--text-color);
@@ -272,7 +267,7 @@ li {
   grid-column: 1 / 6;
   padding: 20px;
   color: var(--text-color);
- 
+
 }
 
 .legal a {
@@ -328,7 +323,7 @@ footer ul li a:hover {
 
 
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1100px) {
     .header .container {
         width: 90%;
     }
@@ -370,17 +365,15 @@ footer ul li a:hover {
         width: 90%;
     }
 }
-  
-
 
 @media only screen and (max-width: 1100px) {
 
   .footercontainer {
 
-  
+
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4);
-    
+
   }
 
 
@@ -391,7 +384,7 @@ footer ul li a:hover {
 
   .footerlogo {
     grid-column: 1 / 3;
-    
+
   }
 
   .JensenFlix {
@@ -421,10 +414,10 @@ footer ul li a:hover {
 
   .footercontainer {
 
-  
+
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6);
-  
+
 
   }
 
@@ -461,3 +454,37 @@ footer ul li a:hover {
   }
 }
 
+@media (max-width: 768px) {
+  .navbar ul li.mobilemenu {
+      display: block;
+  }
+  .navbar ul li:not(.mobile) {
+      display: none;
+  }
+  .navbar li.search {
+      margin-left: auto;
+  }
+  
+  li.search a {
+      padding: 0;
+  }
+  .navbar ul li a {
+      padding: 0;
+  }
+  .navbar ul li.logo img {
+      width: 150px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+  .navbar ul li.logo img {
+      width: 200px;
+  }
+  .navbar ul li:not(.mobile) {
+      display: none;
+  }
+  .navbar ul li.mobilemenu {
+      display: block;
+  }
+  
+}
