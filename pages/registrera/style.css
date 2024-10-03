@@ -171,10 +171,9 @@ label a {
 
 #card:checked~.card-input,
 #swish:checked~.swish-input {
-    display: flex;
     visibility: visible;
     height: 60px;
-    margin-top: 15px;
+
 }
 
 input[type="radio"]:checked+label+.input-box {
