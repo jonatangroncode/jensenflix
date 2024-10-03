@@ -96,7 +96,7 @@ input[type=submit]:hover,
 
 label a:hover,
 #forgotpassword:hover {
-    color: #EBD3F8;
+    color: #8CABFF;
     text-decoration: underline;
 }
 
@@ -142,25 +142,26 @@ label a {
     background-color: #202020;
     padding: 10px;
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1px;
 }
 
 .payment-option {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
 
 }
 
 .payment-option input[type="radio"] {
-    margin-right: 10px;
+    grid-column: 1;
 }
 
 .input-box {
-    display: flex;
-    margin-left: 10px;
-    flex-direction: column;
+    grid-column: 2 / span 2;
+    margin-left: 1px;
+    flex-direction: row;
     visibility: hidden;
     height: 0;
     overflow: hidden;
@@ -170,8 +171,10 @@ label a {
 
 #card:checked~.card-input,
 #swish:checked~.swish-input {
+    display: flex;
     visibility: visible;
     height: 60px;
+    margin-top: 15px;
 }
 
 input[type="radio"]:checked+label+.input-box {
