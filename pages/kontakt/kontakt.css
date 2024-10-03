@@ -1,23 +1,20 @@
 @import "variables.css";
 
-
-
  .container-2{
-   
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: center;
     flex-flow: row wrap;
     border-radius: 2%;
     width: 100%;
     margin: 0;
- }
+}
 
 .contact-header {
   display: flex;
   justify-content: center;
   justify-items: center;
-  margin-top: 50px;
+  margin:50px 0;
   color: var(--text-color);
 }
 
@@ -25,13 +22,14 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    margin: 20px 0;
+    align-content: space-between;
+    margin: 50px 0;
     padding: 0px;
     flex: 1 1 30%;
 }
 .contact-card{ 
- background-color: var(--secondary-container-bg-color);
- border-radius: 8%;
+   border-radius: 8%;
+   justify-content: space-between;
 }
 
 .contact-card:hover {
@@ -48,25 +46,23 @@
     padding: 0;
     border-radius: 100%;
     border: 1px solid;
-    background-color: var(--main-background-color);
 }
+
 .name, .number, .email {
     text-align: center;
 }
 
-
-
 .location-container {
     display: flex;
     flex-flow: row wrap;
-    flex: 1 1 30%;
-   justify-content: space-around;
-   background: var(--secondary-container-bg-color);
+    flex: 1 1 50%;
+   justify-content: center;
+   margin-top: 50px; 
+   gap: 50px;
 }
 
 .location-img {
     width: 50%;
-    margin: 20px;
     padding: 20px;
     border-radius: 10%;
 }
@@ -74,10 +70,8 @@
 .location-container h2 {
     display:block;
     margin-top: 20px;
-    padding: 10px;
-     
+    padding: 10px;    
 }
-
 
 .location-info {
     background-color: var(--secondary-container-bg-color);
@@ -88,17 +82,97 @@
     align-items: center;
 }
 
-
-
-ul li {
+.location ul li {
     margin: 1em;
     display: flex;
     align-items: center;
 }
-li img {
+
+.location img {
     margin-right: 15px;
     width: 30px;
     height: 30px;
-    border-color: var(--secondary-container-bg-color);    
+    border-color: var(--secondary-theme-color);  
     box-shadow: 0 4px 12px var(--secondary-theme-color-hover)
+}
+
+@media (min-width: 1200px) {
+    .container-2 {
+        display: flex;
+        justify-content: space-between; 
+        flex-wrap: wrap;
+    }
+
+    .contact-card-wrapper {
+        flex: 1 1 30%; 
+        margin: 10px;
+    }
+}
+
+@media (min-width: 960px) and (max-width: 1200px) {
+    .container-2 {
+        display: flex;
+        justify-content: space-between; 
+        flex-wrap: wrap;
+    }
+    .contact-card-wrapper {
+        flex: 1 1 30%; 
+        margin: 5px;
+    }
+    .contact-card {
+        max-width: 90%; 
+    }
+    .pic img {
+        width: 250px;
+        height: 250px;
+    }
+    .location-container {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+    .container-2 {
+        display: flex;
+        justify-content: center; 
+        flex-wrap: wrap; 
+    }
+    .contact-card-wrapper {
+        flex: 1 1 45%; 
+        display: flex;
+        justify-content: space-between;
+        justify-items: center;
+        margin: 10px;
+    }
+
+    .location-container {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-2 {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-card-wrapper {
+        flex: 1 1 100%; 
+        justify-content: center;
+        align-items: center;
+    }
+    .location-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .location-img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .location-info, .location ul li{
+        text-align: center;
+    }
+    
 }
