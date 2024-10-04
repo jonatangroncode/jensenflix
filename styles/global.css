@@ -4,6 +4,11 @@
   font-weight: normal;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 @font-face {
   font-family: Roboto;
   src: url("../fonts/Roboto-Bold.ttf");
