@@ -1,5 +1,9 @@
 @import "variables.css";
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
 .main-container-1 {
     text-align: center;
     display: grid;
@@ -7,7 +11,8 @@
 
 .hero {
     background-image: url('../../images/r-images/hero.jpg');
-    background-size: contain;
+    background-size: cover;
+background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
     display: grid;
@@ -16,6 +21,10 @@
     border-radius: 15px;
     border: 1px solid var(--container-bg-color);
 }
+ .hero-section {
+    width: 90%;
+    height: 30%;
+ }
 
 .hero-section h1 {
     font-size: 3rem;
@@ -52,7 +61,7 @@
     grid-template-columns: repeat(2 1fr);
     font-size: 20px;
     justify-self: normal;
-    margin: 20px 0;
+    margin:0 auto;
 }
 
 .portfolio {
@@ -64,7 +73,7 @@
 .portfolio-content {
     display: grid;
     grid-column: 1 / 2;
-    width: 400px;
+    width: 100%;
 }
 
 .portfolio-img {
@@ -95,7 +104,9 @@
 }
 
 .skillz img {
-    width: 50vw;
+    width: 40vw;
+    height: auto;
+    padding: 0;
     border-radius: 30px;
     border: 1px solid var(--secondary-theme-color);
 }
@@ -208,12 +219,7 @@
 }
 
 @media (min-width: 1200px) {
-    .hero {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 20px;
-        padding: 20px;
-    }
+    
 }
 
 @media (min-width: 960px) and (max-width: 1200px) {
@@ -226,7 +232,7 @@
     }
 
     .about-us-title {
-        font-size: 30px;
+        font-size: 2.5em;
     }
 
     .about-us-content,
@@ -253,17 +259,14 @@
 @media (min-width: 768px) and (max-width: 960px) {
     .main-container-1 {
         grid-template-columns: 1fr;
+        gap: 20px;
         align-items: center;
         justify-items: center;
         width: 100%;
     }
 
     .hero {
-        display: grid;
-        width: 70%;
-        grid-template-columns: 1fr;
-        grid-gap: 20px;
-        padding: 20px;
+        height: 50vh;
     }
 
     .hero section {
@@ -274,9 +277,13 @@
         text-align: center;
     }
 
+    .hero-section h1 {
+        font-size: 2em;
+    }
+
     .about-us-title,
     .about-us-content {
-        font-size: 25px;
+        font-size: 2em;
     }
 
     .portfolio-content,
@@ -290,6 +297,7 @@
     .leader-content,
     .leader-img {
     grid-column: 1 / 1;
+    gap: 20px;
     justify-self: center;
     text-align: center;
     }
@@ -301,23 +309,71 @@
         width: 100%;
         margin: 0 auto;
     }
-    .contact-page {
+
+    .skillz {
+        gap: 30px;
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .partner {
+        padding: 10px;
+        margin: 10px;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .leader {
+        padding: 0;
+        margin: 0;
+    }
+
+    .leader-img {
         display: none;
     }
+
+    .contact-page {
+        width: 30%;
+        justify-self: center;
+        margin: 40px;
+        padding: 20px;
+    }
+    
 }
 
 @media (max-width: 768px) {
+
     .main-container-1 {
         grid-template-columns: 1fr;
+        gap: 10px;
         align-items: center;
         width: 100%;
+        height: auto;
+    }
+    .hero {
+        background-image: url('../../images/r-images/hero.jpg');
+        background-size: cover; 
+        background-position: center;
+        background-repeat: no-repeat;
+        max-width: 100%;
+        height: 40vh; 
+        margin: 0;
+        display: grid;
+        place-items: center;
+    }
+    .hero section {
+        width: 100%;
+        padding: 0;
+        justify-self: center;
+        margin: 20px;
+        text-align: center;
     }
 
-    .hero section {
-        height: auto;
-        width: 100%;
-        padding: 20px;
-       text-align: center;
+    .hero-section h1 {
+        font-size: 1.5em; 
+        align-items: center;
+        max-width: 90%; 
     }
 
     .leader img {
@@ -340,6 +396,9 @@
     .leader-content,
     .leader-img {
         grid-column: 1 / 1;
+        gap: 1px;
+        margin: 0;
+        padding: 1px;
         justify-self: center;
         text-align: center;
     }
@@ -349,6 +408,46 @@
     .partner img,
     .leader img {
         width: 100%;
-        margin: 0 auto;
+        margin: 0;
+        padding: 1px;
+        border-radius: 15px;
     }
+
+    .skillz {
+        gap: 10px;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .partner {
+        padding: 0;
+        margin: 0;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .leader {
+        padding: 0;
+        margin: 0;
+    }
+
+  .leader-content-wrapper{
+    gap: 10px;
+    margin: 10px;
+    padding: 20px;
+  }
+
+    .contact-page {
+        margin: 30px;
+        padding: 5px;
+        width: 80%; 
+        justify-self: center;
+        font-size: 1rem; 
+    }
+
+    .contact-page:hover {
+        transform: scale(1.1); 
+    }
+
 }
