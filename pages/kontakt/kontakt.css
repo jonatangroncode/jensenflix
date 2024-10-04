@@ -26,10 +26,10 @@
 .contact-card-wrapper {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-content: space-between;
-    margin: 50px 0;
-    padding: 0px;
+    margin: 50px auto;
+    padding: 0;
     flex: 1 1 30%;
 }
 .contact-card{ 
@@ -46,8 +46,8 @@
 }
 
 .pic img{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     padding: 0;
     border-radius: 100%;
     border: 1px solid;
@@ -102,16 +102,8 @@
 }
 
 @media (min-width: 1200px) {
-    .container-2 {
-        display: flex;
-        justify-content: space-between; 
-        flex-wrap: wrap;
-    }
-
-    .contact-card-wrapper {
-        flex: 1 1 30%; 
-        margin: 10px;
-    }
+   .contact-card .contact-card-wrapper {
+    align-items: center;
 }
 
 @media (min-width: 960px) and (max-width: 1200px) {
